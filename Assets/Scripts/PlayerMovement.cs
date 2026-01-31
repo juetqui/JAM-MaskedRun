@@ -12,16 +12,19 @@ public class PlayerLaneMovement : MonoBehaviour
     [Header("Salto")]
     public float jumpForce = 6f;
     public LayerMask groundLayer;
-    public float groundCheckDistance = 1.1f;
+    private float groundCheckDistance = 0.3f;
 
     private Rigidbody rb;
     private PlayerInputActions inputActions;
     private Animator animator;
 
     private int currentLane = 1; // 0=Left, 1=Mid, 2=Right
-    public bool isGrounded = true;
+    public bool isGrounded;
 
-    // Para no spamear animaciones mientras todavía estás yendo al carril
+    [SerializeField] private float groundCheckRadius = 0f;
+    [SerializeField] private float groundCheckOffset = 0.1f;
+
+    // Para no spamear animaciones mientras todavï¿½a estï¿½s yendo al carril
     private bool isChangingLane;
 
     void Awake()
@@ -51,22 +54,22 @@ public class PlayerLaneMovement : MonoBehaviour
     void Update()
     {
         MoveToLane();
+        CheckGround();
+        animator.SetBool("Grounded", isGrounded);
 
-        // Si estás cerca del carril objetivo, terminamos el "lane change"
+        // Si estï¿½s cerca del carril objetivo, terminamos el "lane change"
         float targetX = (currentLane - 1) * laneDistance;
         if (isChangingLane && Mathf.Abs(transform.position.x - targetX) <= laneArriveThreshold)
         {
             isChangingLane = false;
-            // Si usás un bool tipo "IsDashing", acá sería buen lugar para apagarlo.
+            // Si usï¿½s un bool tipo "IsDashing", acï¿½ serï¿½a buen lugar para apagarlo.
         }
     }
 
     void FixedUpdate()
     {
-        CheckGround();
 
-        // si usás parámetro en animator:
-        animator.SetBool("Grounded", isGrounded);
+        // si usï¿½s parï¿½metro en animator:
     }
 
     // ===============================
@@ -88,7 +91,7 @@ public class PlayerLaneMovement : MonoBehaviour
         currentLane = targetLane;
         isChangingLane = true;
 
-        // Animator: trigger + dirección
+        // Animator: trigger + direcciï¿½n
         animator.SetFloat("LaneDir", direction);
         animator.SetTrigger("LaneChange");
     }
@@ -110,21 +113,39 @@ public class PlayerLaneMovement : MonoBehaviour
     // ===============================
     void OnJump(InputAction.CallbackContext context)
     {
-        if (isGrounded) return;
+        if (!isGrounded) return;
+
+        // salto consistente (no se acumula)
+        Vector3 v = rb.linearVelocity;
+        v.y = 0f;
+        rb.linearVelocity = v;
 
         rb.AddForce(Vector3.up * jumpForce, ForceMode.Impulse);
-
-        // Animator: trigger de salto
         animator.SetTrigger("Jump");
     }
 
     void CheckGround()
     {
-        isGrounded = Physics.Raycast(
-            transform.position,
+        // Punto desde donde chequeamos (cerca de los pies)
+        Vector3 origin = transform.position + Vector3.up * groundCheckOffset;
+
+        // SphereCast hacia abajo
+        isGrounded = Physics.SphereCast(
+            origin,
+            groundCheckRadius,
             Vector3.down,
+            out _,
             groundCheckDistance,
-            groundLayer
+            groundLayer,
+            QueryTriggerInteraction.Ignore
         );
+    }
+    private void OnDrawGizmos()
+    {
+        Gizmos.color = isGrounded ? Color.green : Color.red;
+
+        Vector3 origin = transform.position + Vector3.up * groundCheckOffset;
+        Gizmos.DrawLine(origin, origin + Vector3.down * groundCheckDistance);
+        Gizmos.DrawWireSphere(origin + Vector3.down * groundCheckDistance, groundCheckRadius);
     }
 }

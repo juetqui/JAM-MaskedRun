@@ -1,0 +1,15 @@
+fileFormatVersion: 2
+guid: 1922046c3e8291e46b2d729505187263
+NativeFormatImporter:
+  externalObjects: {}
+  mainObjectFileID: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 162770
+  packageName: URP Post Processing Profiles
+  packageVersion: 1.26
+  assetPath: Assets/URP PostProcessing Profiles/Textures/ground.mat
+  uploadId: 593619

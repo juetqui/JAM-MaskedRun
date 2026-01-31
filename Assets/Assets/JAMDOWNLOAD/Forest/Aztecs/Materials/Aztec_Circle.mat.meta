@@ -1,0 +1,15 @@
+fileFormatVersion: 2
+guid: 5d012aca0d4d8864594e5e84cae52409
+NativeFormatImporter:
+  externalObjects: {}
+  mainObjectFileID: 2100000
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 259301
+  packageName: Aztecs
+  packageVersion: 1.0
+  assetPath: Assets/Aztecs/Materials/Aztec_Circle.mat
+  uploadId: 596855

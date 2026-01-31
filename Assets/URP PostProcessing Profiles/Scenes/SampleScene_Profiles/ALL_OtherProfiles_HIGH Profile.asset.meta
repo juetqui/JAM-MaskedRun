@@ -1,0 +1,16 @@
+fileFormatVersion: 2
+guid: 2661edf8ef1e69343a9f5f02b260b8f4
+NativeFormatImporter:
+  externalObjects: {}
+  mainObjectFileID: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 162770
+  packageName: URP Post Processing Profiles
+  packageVersion: 1.26
+  assetPath: Assets/URP PostProcessing Profiles/Scenes/SampleScene_Profiles/ALL_OtherProfiles_HIGH
+    Profile.asset
+  uploadId: 593619

@@ -1,0 +1,15 @@
+fileFormatVersion: 2
+guid: c263b1874df47d940a5f0f2e451ab4f1
+timeCreated: 1506257942
+licenseType: Store
+NativeFormatImporter:
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 162770
+  packageName: URP Post Processing Profiles
+  packageVersion: 1.26
+  assetPath: Assets/URP PostProcessing Profiles/LightFlares/Flares/Flare3.flare
+  uploadId: 593619

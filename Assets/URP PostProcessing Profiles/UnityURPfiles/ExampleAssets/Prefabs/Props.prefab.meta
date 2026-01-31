@@ -1,0 +1,15 @@
+fileFormatVersion: 2
+guid: 85dfab9623c67784fa7894de63cd1604
+NativeFormatImporter:
+  externalObjects: {}
+  mainObjectFileID: 100100000
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 162770
+  packageName: URP Post Processing Profiles
+  packageVersion: 1.26
+  assetPath: Assets/URP PostProcessing Profiles/UnityURPfiles/ExampleAssets/Prefabs/Props.prefab
+  uploadId: 593619
