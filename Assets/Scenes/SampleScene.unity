@@ -796,7 +796,7 @@ MonoBehaviour:
   groundSpawnDistance: 150
   obstacleSpawnChance: 7
   tripleObstacleChance: 3
-  minEmptySpaces: 2
+  minEmptySpaces: 5
 --- !u!114 &1501879157
 MonoBehaviour:
   m_ObjectHideFlags: 0
