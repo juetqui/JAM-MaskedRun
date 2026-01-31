@@ -1,0 +1,15 @@
+fileFormatVersion: 2
+guid: cb45b6d74df4d554a8bdb2bbf95d763e
+NativeFormatImporter:
+  externalObjects: {}
+  mainObjectFileID: 4890085278179872738
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 162770
+  packageName: URP Post Processing Profiles
+  packageVersion: 1.26
+  assetPath: Assets/URP PostProcessing Profiles/Scenes/SampleSceneSettings.lighting
+  uploadId: 593619

@@ -1,0 +1,15 @@
+fileFormatVersion: 2
+guid: a5aaee4111611af43b5abbff184fe5fa
+NativeFormatImporter:
+  externalObjects: {}
+  mainObjectFileID: 2100000
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 162770
+  packageName: URP Post Processing Profiles
+  packageVersion: 1.26
+  assetPath: Assets/URP PostProcessing Profiles/UnityURPfiles/ExampleAssets/Materials/Plastic_Rough_Mat.mat
+  uploadId: 593619

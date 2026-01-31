@@ -1,0 +1,15 @@
+fileFormatVersion: 2
+guid: a68228c24abfa2f4b8954d7b0148f799
+NativeFormatImporter:
+  externalObjects: {}
+  mainObjectFileID: 2100000
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 162770
+  packageName: URP Post Processing Profiles
+  packageVersion: 1.26
+  assetPath: Assets/URP PostProcessing Profiles/UnityURPfiles/ExampleAssets/Materials/DryWall_Mat.mat
+  uploadId: 593619

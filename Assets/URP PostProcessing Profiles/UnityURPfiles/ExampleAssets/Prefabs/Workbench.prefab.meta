@@ -1,0 +1,14 @@
+fileFormatVersion: 2
+guid: 8850d132797ff49298ba781e8e1c9bfe
+PrefabImporter:
+  externalObjects: {}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 162770
+  packageName: URP Post Processing Profiles
+  packageVersion: 1.26
+  assetPath: Assets/URP PostProcessing Profiles/UnityURPfiles/ExampleAssets/Prefabs/Workbench.prefab
+  uploadId: 593619
