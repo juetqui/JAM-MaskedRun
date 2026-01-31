@@ -69,6 +69,7 @@ namespace ObjectPool
     public enum PoolType
     {
         Ground,
-        
+        OneLineObstacle,
+        FullLineObstacle,
     }
 }

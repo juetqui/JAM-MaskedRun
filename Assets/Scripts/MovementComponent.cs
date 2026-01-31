@@ -4,13 +4,13 @@ using ObjectPool;
 // [RequireComponent(typeof(Rigidbody))]
 public class MovementComponent : MonoBehaviour
 {
+    [SerializeField] private PoolType _type;
     [SerializeField] private float _speed = 5f;
-    [SerializeField] private float _objectDist = -60f;
+    [SerializeField] private float _newSpawnDist = -60f;
     [SerializeField] private float _despawnDist = -110f;
     
     // private Rigidbody _rb;
-    private const string GroundTag = "Ground";
-    private bool _canSpawnGround = true;
+    private bool _canSpawn = true;
     
     void Start()
     {
@@ -21,16 +21,15 @@ public class MovementComponent : MonoBehaviour
     {
         transform.position -= transform.forward * (_speed * Time.deltaTime);
 
-        if (transform.position.z <= _objectDist && CompareTag(GroundTag) && _canSpawnGround)
+        if (transform.position.z <= _newSpawnDist && _canSpawn)
         {
-            ObjectSpawner.Instance.SpawnGround();
-            _canSpawnGround = false;
+            ObjectSpawner.Instance.SpawnGround(transform.position);
+            _canSpawn = false;
         }
 
-        if (transform.position.z <= _despawnDist)
-        {
-            _canSpawnGround = true;
-            gameObject.SetActive(false);
-        }
+        if (transform.position.z > _despawnDist) return;
+        
+        _canSpawn = true;
+        gameObject.SetActive(false);
     }
 }
