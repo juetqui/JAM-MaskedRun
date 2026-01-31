@@ -56,9 +56,9 @@ namespace ObjectPool
             }
 
             objectToSpawn = PoolDictionary[type].Dequeue();
-            objectToSpawn.SetActive(true);
             objectToSpawn.transform.position = position;
             objectToSpawn.transform.rotation = rotation;
+            objectToSpawn.SetActive(true);
             
             PoolDictionary[type].Enqueue(objectToSpawn);
             
