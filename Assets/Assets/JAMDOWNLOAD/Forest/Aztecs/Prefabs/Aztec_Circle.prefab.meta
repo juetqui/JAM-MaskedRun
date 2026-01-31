@@ -1,0 +1,14 @@
+fileFormatVersion: 2
+guid: 5cd6fc4de4b16724a86e163ea46d97f0
+PrefabImporter:
+  externalObjects: {}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 259301
+  packageName: Aztecs
+  packageVersion: 1.0
+  assetPath: Assets/Aztecs/Prefabs/Aztec_Circle.prefab
+  uploadId: 596855
