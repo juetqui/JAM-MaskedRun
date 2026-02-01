@@ -1,7 +1,6 @@
 using UnityEngine;
 using UnityEngine.SceneManagement;
 using UnityEngine.InputSystem;
-using Unity.VisualScripting;
 
 public class PauseManager : MonoBehaviour
 {
@@ -13,23 +12,40 @@ public class PauseManager : MonoBehaviour
 
     private PlayerInputActions inputActions;
     public bool IsPaused { get; private set; }
+    private static PauseManager _instance;
 
     void Awake()
     {
-        inputActions = new PlayerInputActions();
-        if (pausePanel != null)
-            pausePanel.SetActive(false);
+        if (_instance != null && _instance != this)
+        {
+            Destroy(gameObject);
+            return;
+        }
+        _instance = this;
 
-        Resume(); // asegura estado correcto
+        inputActions = new PlayerInputActions();
+        if (pausePanel != null) pausePanel.SetActive(false);
+        Resume();
     }
+
+    void OnDestroy()
+    {
+        if (_instance == this) _instance = null;
+        Time.timeScale = 1f;
+    }
+
     void OnEnable()
     {
+        if (inputActions == null) return;
+
         inputActions.Enable();
         inputActions.Player.Pause.performed += OnPause;
     }
 
     void OnDisable()
     {
+        if (inputActions == null) return;
+
         inputActions.Player.Pause.performed -= OnPause;
         inputActions.Disable();
     }
@@ -44,15 +60,20 @@ public class PauseManager : MonoBehaviour
     {
         if (IsPaused) return;
 
+        Debug.Log($"[PauseManager] Pause() en escena: {SceneManager.GetActiveScene().name} | instanceID: {GetInstanceID()} | pausePanel: {(pausePanel ? pausePanel.name : "NULL")}");
+
         IsPaused = true;
         Time.timeScale = 0f;
 
         if (pausePanel != null)
             pausePanel.SetActive(true);
+        else
+            Debug.LogWarning("[PauseManager] pausePanel es NULL, por eso no se muestra el menú");
 
         Cursor.lockState = CursorLockMode.None;
         Cursor.visible = true;
     }
+
 
     public void Resume()
     {
@@ -73,19 +94,15 @@ public class PauseManager : MonoBehaviour
         SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
     }
 
-    public void Play()
-    {
-        SceneManager.LoadScene("julian");
-    }
-
     public void GoToMainMenu()
     {
-        Time.timeScale = 1f;
+        Resume();
         SceneManager.LoadScene(mainMenuSceneName);
     }
 
-    //void OnDestroy()
-    //{
-    //    Time.timeScale = 1f;
-    //}
+    public void Play()
+    {
+        Resume();
+        SceneManager.LoadScene("julian");
+    }
 }

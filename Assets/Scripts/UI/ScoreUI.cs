@@ -5,13 +5,21 @@ public class ScoreUI : MonoBehaviour
 {
     [SerializeField] private TMP_Text scoreText;
 
-    void OnEnable()
+    void Start()
     {
-        ScoreManager.Instance.OnScoreChanged += UpdateUI;
-        UpdateUI(ScoreManager.Instance.Score);
+        // Esperamos a que el manager exista
+        if (ScoreManager.Instance != null)
+        {
+            ScoreManager.Instance.OnScoreChanged += UpdateUI;
+            UpdateUI(ScoreManager.Instance.Score);
+        }
+        else
+        {
+            Debug.LogError("GameTimeManager no está en la escena");
+        }
     }
 
-    void OnDisable()
+    void OnDestroy()
     {
         if (ScoreManager.Instance != null)
             ScoreManager.Instance.OnScoreChanged -= UpdateUI;
