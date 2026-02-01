@@ -11,6 +11,7 @@ public class PlayerLaneMovement : MonoBehaviour
     public float laneDistance = 3f;
     public float laneChangeSpeed = 12f;
     public float laneArriveThreshold = 0.02f;
+    public float laneOffset = 1.5f;
 
     [Header("Salto")]
     public float jumpForce = 6f;
@@ -113,7 +114,7 @@ public class PlayerLaneMovement : MonoBehaviour
     void MoveToLane()
     {
         Vector3 targetPosition = transform.position;
-        targetPosition.x = (currentLane - 1) * laneDistance;
+        targetPosition.x = ((currentLane - 1) + laneOffset) * laneDistance;
 
         transform.position = Vector3.Lerp(
             transform.position,

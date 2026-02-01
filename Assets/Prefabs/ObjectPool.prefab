@@ -1,0 +1,86 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1 &1746672074085252289
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 3471933680037582713}
+  - component: {fileID: 140481685777295250}
+  - component: {fileID: 1483593150668940520}
+  m_Layer: 0
+  m_Name: ObjectPool
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &3471933680037582713
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1746672074085252289}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &140481685777295250
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1746672074085252289}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4d09a8333c2fb17418ec75af917dd0a1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::ObjectPool.ObjectPool
+  pools:
+  - type: 0
+    prefab: {fileID: 7277032303704923902, guid: 4e48291203f3c8f4eb137833e09c3849, type: 3}
+    size: 200
+  - type: 1
+    prefab: {fileID: 2775775768493010405, guid: ad60fc73bef947149b0dc22a9d2f00dd, type: 3}
+    size: 100
+  - type: 2
+    prefab: {fileID: 5096220395374701308, guid: ef1ce913624d1b74bb9916adaddb254d, type: 3}
+    size: 100
+  - type: 3
+    prefab: {fileID: 5176862680672773228, guid: 7f0b8c39fabbebb4393a482b02ffea37, type: 3}
+    size: 100
+  - type: 4
+    prefab: {fileID: 4912352543779205079, guid: 4824ee8abfb5fb54a82a1f5fb29881f7, type: 3}
+    size: 100
+  objectToSpawn: {fileID: 0}
+--- !u!114 &1483593150668940520
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1746672074085252289}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9cdb56b3801b8024d94f89adaf9afba3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::ObjectPool.ObjectSpawner
+  groundLength: 2.9
+  targetTrackLength: 150
+  lengthMargin: 20
+  obstacleSpawnChance: 7
+  tripleObstacleChance: 3
+  minEmptySpaces: 2
+  environmentTrackLength: 35
+  environmentLength: 27
+  environmentLeftOffset: 0
+  environmentRightOffset: 9
