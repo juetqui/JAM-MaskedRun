@@ -3,6 +3,8 @@ using UnityEngine;
 
 public class MinuteChoiceController : MonoBehaviour
 {
+    public static MinuteChoiceController Instance;
+    
     [Header("Timing")]
     [SerializeField] private float intervalSeconds = 60f; // cada 1 minuto
 
@@ -10,12 +12,14 @@ public class MinuteChoiceController : MonoBehaviour
     [SerializeField] private GameObject choicePanel;
 
     // Evento X: 0 = A, 1 = B
-    public static event Action<int> OnChoiceSelected;
+    public Action<WorldType> OnChoiceSelected;
 
     private float nextTriggerTime;
 
     void Awake()
     {
+        if (Instance == null) Instance = this;
+        
         if (choicePanel != null)
             choicePanel.SetActive(false);
 
@@ -27,7 +31,7 @@ public class MinuteChoiceController : MonoBehaviour
     {
         if (GameTimeManager.Instance == null)
         {
-            Debug.LogError("GameTimeManager no está en la escena.");
+            Debug.LogError("GameTimeManager no estï¿½ en la escena.");
             return;
         }
 
@@ -42,7 +46,7 @@ public class MinuteChoiceController : MonoBehaviour
 
     private void HandleTimeChanged(float elapsed)
     {
-        // Cada vez que se cumple el próximo minuto
+        // Cada vez que se cumple el prï¿½ximo minuto
         if (elapsed >= nextTriggerTime)
         {
             nextTriggerTime += intervalSeconds; // agenda el siguiente minuto
@@ -69,17 +73,17 @@ public class MinuteChoiceController : MonoBehaviour
         Time.timeScale = 1f;
     }
 
-    // Botón opción A
+    // Botï¿½n opciï¿½n A
     public void ChooseA()
     {
         HideAndResume();
-        OnChoiceSelected?.Invoke(0);
+        OnChoiceSelected?.Invoke(WorldType.Forest);
     }
 
-    // Botón opción B
+    // Botï¿½n opciï¿½n B
     public void ChooseB()
     {
         HideAndResume();
-        OnChoiceSelected?.Invoke(1);
+        OnChoiceSelected?.Invoke(WorldType.Fire);
     }
 }

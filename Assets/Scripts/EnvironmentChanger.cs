@@ -9,26 +9,24 @@ public class EnvironmentChanger : MonoBehaviour
 
     private Material _targetMaterial;
     private WorldType _currentWorld = WorldType.Forest;
-    private WorldType _targetWorld = WorldType.Fire;
 
     private void Start()
     {
-        PlayerLaneMovement.Instance.OnWorldChanged += UpdateWorldType;
+        MinuteChoiceController.Instance.OnChoiceSelected += UpdateWorldType;
         _targetMaterial = fireMaterial;
     }
 
-    private void UpdateWorldType()
+    private void UpdateWorldType(WorldType worldType)
     {
         RenderSettings.skybox = _targetMaterial;
         
-        _currentWorld = _targetWorld;
-        _targetWorld = _currentWorld == WorldType.Forest ? WorldType.Fire : WorldType.Forest;
+        _currentWorld = worldType;
         _targetMaterial = _currentWorld == WorldType.Forest ? fireMaterial : forestMaterial;
     }
+}
 
-    private enum WorldType
-    {
-        Forest,
-        Fire
-    }
+public enum WorldType
+{
+    Forest,
+    Fire
 }
