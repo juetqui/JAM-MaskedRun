@@ -91,7 +91,7 @@ namespace ObjectPool
         private void SpawnSingleObstacle(Vector3 groundPos)
         {
             int[] xPos = { -3, 0, 3 };
-            var randomX = UnityEngine.Random.Range(xPos[0], xPos[1]);
+            var randomX = UnityEngine.Random.Range(xPos[0], xPos[2]);
             var position = new Vector3(randomX, 0, groundPos.z);
             ObjectPool.Instance.SpawnFromPool(PoolType.OneLineObstacle, position, Quaternion.identity);
         }
