@@ -23,7 +23,7 @@ public class MinuteChoiceController : MonoBehaviour
         nextTriggerTime = intervalSeconds;
     }
 
-    void OnEnable()
+    void Start()
     {
         if (GameTimeManager.Instance == null)
         {
