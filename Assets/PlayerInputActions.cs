@@ -231,12 +231,12 @@ public partial class @PlayerInputActions: IInputActionCollection2, IDisposable
                 },
                 {
                     ""name"": """",
-                    ""id"": ""26a923ba-8a8f-431d-85ef-a315ce6e8d36"",
-                    ""path"": ""<Mouse>/leftButton"",
+                    ""id"": ""3e4f3595-f214-44e8-b74c-07756e5d2e9a"",
+                    ""path"": ""<Keyboard>/escape"",
                     ""interactions"": """",
                     ""processors"": """",
                     ""groups"": """",
-                    ""action"": ""ChangeEnv"",
+                    ""action"": ""Pause"",
                     ""isComposite"": false,
                     ""isPartOfComposite"": false
                 }

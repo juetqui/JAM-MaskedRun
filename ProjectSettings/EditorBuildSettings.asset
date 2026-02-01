@@ -11,6 +11,9 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/Julian.unity
     guid: 5d87a75ae6051104d81d6ef31d50eccd
+  - enabled: 1
+    path: Assets/Scenes/Defeat.unity
+    guid: 8508fb1fc72563c4a95f346d8c2f13ff
   m_configObjects:
     com.unity.input.settings.actions: {fileID: -944628639613478452, guid: 8cdcfb4610c1dea4daa990dd0729df28, type: 3}
   m_UseUCBPForAssetBundles: 0
