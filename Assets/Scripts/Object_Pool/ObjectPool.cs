@@ -26,10 +26,7 @@ namespace ObjectPool
         {
             if (Instance == null)
                 Instance = this;
-        }
-
-        void Start()
-        {
+            
             PoolDictionary = new Dictionary<PoolType, Queue<GameObject>>();
 
             foreach (var pool in pools)
