@@ -1,5 +1,6 @@
 using System.Collections;
 using UnityEngine;
+using UnityEngine.InputSystem;
 using UnityEngine.SceneManagement;
 
 [DisallowMultipleComponent]
@@ -8,8 +9,8 @@ public class PauseMenuController : MonoBehaviour
     [Header("UI")]
     [SerializeField] private CanvasGroup canvasGroup;
 
-    [Header("Input")]
-    [SerializeField] private KeyCode toggleKey = KeyCode.Escape;
+    public InputsPlayer inputActions;
+
 
     [Header("Pause")]
     [SerializeField] private bool useTimeScalePause = true;
@@ -55,13 +56,28 @@ public class PauseMenuController : MonoBehaviour
         }
     }
 
-    private void Update()
+    private void Start()
     {
-        if (Input.GetKeyDown(toggleKey))
-            TogglePause();
+        inputActions = PlayerLaneMovement.Instance.inputActions;
     }
 
-    public void TogglePause() => SetPaused(!IsPaused);
+    void OnEnable()
+    {
+        if (inputActions == null) return;
+
+        inputActions.Enable();
+        inputActions.Player.Pause.performed += OnPause;
+    }
+
+    void OnDisable()
+    {
+        if (inputActions == null) return;
+
+        inputActions.Player.Pause.performed -= OnPause;
+        inputActions.Disable();
+    }
+
+    public void OnPause(InputAction.CallbackContext context) => SetPaused(!IsPaused);
     public void Resume() => SetPaused(false);
     public void Pause() => SetPaused(true);
 
