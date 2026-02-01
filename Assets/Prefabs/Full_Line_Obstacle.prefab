@@ -159,5 +159,4 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::MovementComponent
   _type: 2
   _speed: 10
-  _newSpawnDist: -1
   _despawnDist: -10

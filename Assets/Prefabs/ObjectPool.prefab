@@ -52,13 +52,13 @@ MonoBehaviour:
   - type: 1
     prefab: {fileID: 2775775768493010405, guid: ad60fc73bef947149b0dc22a9d2f00dd, type: 3}
     size: 100
-  - type: 2
+  - type: 4
     prefab: {fileID: 5096220395374701308, guid: ef1ce913624d1b74bb9916adaddb254d, type: 3}
     size: 100
-  - type: 3
+  - type: 5
     prefab: {fileID: 5176862680672773228, guid: 7f0b8c39fabbebb4393a482b02ffea37, type: 3}
     size: 100
-  - type: 4
+  - type: 6
     prefab: {fileID: 4912352543779205079, guid: 4824ee8abfb5fb54a82a1f5fb29881f7, type: 3}
     size: 100
   objectToSpawn: {fileID: 0}
@@ -77,9 +77,9 @@ MonoBehaviour:
   groundLength: 2.9
   targetTrackLength: 150
   lengthMargin: 20
-  obstacleSpawnChance: 7
-  tripleObstacleChance: 3
-  minEmptySpaces: 2
+  obstacleSpawnChance: 50
+  tripleObstacleChance: 20
+  minEmptySpaces: 5
   environmentTrackLength: 35
   environmentLength: 27
   environmentLeftOffset: 0
