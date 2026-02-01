@@ -4,7 +4,6 @@ using UnityEngine.InputSystem;
 
 public class EnvironmentChanger : MonoBehaviour
 {
-    [SerializeField] private PlayerLaneMovement player;
     [SerializeField] private Material forestSkybox;
     [SerializeField] private Material fireSkybox;
 
@@ -15,7 +14,7 @@ public class EnvironmentChanger : MonoBehaviour
 
     private void Start()
     {
-        // player.OnWorldUpdated += UpdateWorldType;
+        PlayerLaneMovement.Instance.OnWorldChanged += UpdateWorldType;
     }
 
     private void UpdateWorldType()

@@ -1,9 +1,12 @@
+using System;
 using UnityEngine;
 using UnityEngine.InputSystem;
 
 [RequireComponent(typeof(Rigidbody))]
 public class PlayerLaneMovement : MonoBehaviour
 {
+    public static PlayerLaneMovement Instance;
+    
     [Header("Carriles")]
     public float laneDistance = 3f;
     public float laneChangeSpeed = 12f;
@@ -15,7 +18,7 @@ public class PlayerLaneMovement : MonoBehaviour
     private float groundCheckDistance = 0.3f;
 
     private Rigidbody rb;
-    private PlayerInputActions inputActions;
+    public InputsPlayer inputActions;
     private Animator animator;
 
     private int currentLane = 1; // 0=Left, 1=Mid, 2=Right
@@ -27,10 +30,14 @@ public class PlayerLaneMovement : MonoBehaviour
     // Para no spamear animaciones mientras todav�a est�s yendo al carril
     private bool isChangingLane;
 
+    public Action OnWorldChanged;
+
     void Awake()
     {
+        if (Instance == null) Instance = this;
+        
         rb = GetComponent<Rigidbody>();
-        inputActions = new PlayerInputActions();
+        inputActions = new InputsPlayer();
         animator = GetComponentInChildren<Animator>();
 
         rb.constraints = RigidbodyConstraints.FreezeRotation |
@@ -42,12 +49,14 @@ public class PlayerLaneMovement : MonoBehaviour
         inputActions.Enable();
         inputActions.Player.Move.performed += OnMove;
         inputActions.Player.Jump.performed += OnJump;
+        inputActions.Player.ChangeEnv.performed += ChangeWorld;
     }
 
     void OnDisable()
     {
         inputActions.Player.Move.performed -= OnMove;
         inputActions.Player.Jump.performed -= OnJump;
+        inputActions.Player.ChangeEnv.performed -= ChangeWorld;
         inputActions.Disable();
     }
 
@@ -81,6 +90,11 @@ public class PlayerLaneMovement : MonoBehaviour
 
         if (direction > 0.5f) ChangeLane(+1);
         else if (direction < -0.5f) ChangeLane(-1);
+    }
+
+    private void ChangeWorld(InputAction.CallbackContext context)
+    {
+        OnWorldChanged?.Invoke();
     }
 
     void ChangeLane(int direction)

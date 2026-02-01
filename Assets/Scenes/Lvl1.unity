@@ -119,6 +119,53 @@ NavMeshSettings:
     debug:
       m_Flags: 0
   m_NavMeshData: {fileID: 0}
+--- !u!1 &142097689
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 142097691}
+  - component: {fileID: 142097690}
+  m_Layer: 0
+  m_Name: EnvironmentChanger
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &142097690
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 142097689}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 629538a42e51fa249a04a70995c838f0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::EnvironmentChanger
+  player: {fileID: 0}
+  forestSkybox: {fileID: 2100000, guid: f2b5f3f20933f434e850db1b710542fd, type: 2}
+  fireSkybox: {fileID: 2100000, guid: 19727b4fc15a78e49b7929019eac163c, type: 2}
+--- !u!4 &142097691
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 142097689}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 4.97471, y: 0, z: 9.37898}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &330585543
 GameObject:
   m_ObjectHideFlags: 0
@@ -741,7 +788,8 @@ MonoBehaviour:
   obstacleSpawnChance: 7
   tripleObstacleChance: 3
   minEmptySpaces: 2
-  environmentLength: 15
+  environmentTrackLength: 35
+  environmentLength: 27
   environmentLeftOffset: 0
   environmentRightOffset: 9
 --- !u!114 &1501879157
@@ -768,10 +816,10 @@ MonoBehaviour:
     size: 100
   - type: 3
     prefab: {fileID: 5176862680672773228, guid: 7f0b8c39fabbebb4393a482b02ffea37, type: 3}
-    size: 20
+    size: 100
   - type: 4
     prefab: {fileID: 4912352543779205079, guid: 4824ee8abfb5fb54a82a1f5fb29881f7, type: 3}
-    size: 20
+    size: 100
   objectToSpawn: {fileID: 0}
 --- !u!4 &1501879158
 Transform:
@@ -864,3 +912,4 @@ SceneRoots:
   - {fileID: 832575519}
   - {fileID: 1501879158}
   - {fileID: 1069285700787182761}
+  - {fileID: 142097691}

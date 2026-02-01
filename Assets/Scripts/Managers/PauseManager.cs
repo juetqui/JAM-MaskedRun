@@ -1,3 +1,4 @@
+using System;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 using UnityEngine.InputSystem;
@@ -10,7 +11,7 @@ public class PauseManager : MonoBehaviour
     [Header("Scenes")]
     [SerializeField] private string mainMenuSceneName = "MainMenu";
 
-    private PlayerInputActions inputActions;
+    private InputsPlayer inputActions;
     public bool IsPaused { get; private set; }
     private static PauseManager _instance;
 
@@ -23,9 +24,13 @@ public class PauseManager : MonoBehaviour
         }
         _instance = this;
 
-        inputActions = new PlayerInputActions();
         if (pausePanel != null) pausePanel.SetActive(false);
         Resume();
+    }
+
+    private void Start()
+    {
+        inputActions = PlayerLaneMovement.Instance.inputActions;
     }
 
     void OnDestroy()
@@ -68,7 +73,7 @@ public class PauseManager : MonoBehaviour
         if (pausePanel != null)
             pausePanel.SetActive(true);
         else
-            Debug.LogWarning("[PauseManager] pausePanel es NULL, por eso no se muestra el menú");
+            Debug.LogWarning("[PauseManager] pausePanel es NULL, por eso no se muestra el menï¿½");
 
         Cursor.lockState = CursorLockMode.None;
         Cursor.visible = true;
@@ -83,7 +88,7 @@ public class PauseManager : MonoBehaviour
         if (pausePanel != null)
             pausePanel.SetActive(false);
 
-        // Si tu juego no usa mouse-look, podés dejarlo unlocked
+        // Si tu juego no usa mouse-look, podï¿½s dejarlo unlocked
         Cursor.lockState = CursorLockMode.None;
         Cursor.visible = true;
     }
