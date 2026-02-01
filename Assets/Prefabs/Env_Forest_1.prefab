@@ -143,6 +143,7 @@ Transform:
   - {fileID: 8383241304346386799}
   - {fileID: 4637863633680137226}
   - {fileID: 5989246497374225283}
+  - {fileID: 5810941683655757128}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &5429497725457975851
@@ -224,6 +225,18 @@ PrefabInstance:
       propertyPath: m_Name
       value: Tall_Stone_Wall_Plain (4)
       objectReference: {fileID: 0}
+    - target: {fileID: 8832128527813006726, guid: 30fd37fc8817c3845a15589a52346767, type: 3}
+      propertyPath: m_CastShadows
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8832128527813006726, guid: 30fd37fc8817c3845a15589a52346767, type: 3}
+      propertyPath: m_RayTracingMode
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8832128527813006726, guid: 30fd37fc8817c3845a15589a52346767, type: 3}
+      propertyPath: m_LightProbeUsage
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -245,6 +258,18 @@ PrefabInstance:
     - target: {fileID: 2825591250673580353, guid: e804c2c7f27b17e4faa46bfadd41e7af, type: 3}
       propertyPath: m_Name
       value: Stone_Pillar_Tall_Broken
+      objectReference: {fileID: 0}
+    - target: {fileID: 3623179769180735783, guid: e804c2c7f27b17e4faa46bfadd41e7af, type: 3}
+      propertyPath: m_CastShadows
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3623179769180735783, guid: e804c2c7f27b17e4faa46bfadd41e7af, type: 3}
+      propertyPath: m_RayTracingMode
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3623179769180735783, guid: e804c2c7f27b17e4faa46bfadd41e7af, type: 3}
+      propertyPath: m_LightProbeUsage
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 7481076756813795013, guid: e804c2c7f27b17e4faa46bfadd41e7af, type: 3}
       propertyPath: m_LocalScale.x
@@ -372,6 +397,18 @@ PrefabInstance:
       propertyPath: m_Name
       value: Tall_Stone_Wall_Plain (2)
       objectReference: {fileID: 0}
+    - target: {fileID: 8832128527813006726, guid: 30fd37fc8817c3845a15589a52346767, type: 3}
+      propertyPath: m_CastShadows
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8832128527813006726, guid: 30fd37fc8817c3845a15589a52346767, type: 3}
+      propertyPath: m_RayTracingMode
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8832128527813006726, guid: 30fd37fc8817c3845a15589a52346767, type: 3}
+      propertyPath: m_LightProbeUsage
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -442,9 +479,57 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 4918395725543324880, guid: 9c034cb313176c54f9abc8c6edc832a9, type: 3}
+      propertyPath: m_CastShadows
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4918395725543324880, guid: 9c034cb313176c54f9abc8c6edc832a9, type: 3}
+      propertyPath: m_RayTracingMode
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4918395725543324880, guid: 9c034cb313176c54f9abc8c6edc832a9, type: 3}
+      propertyPath: m_LightProbeUsage
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 5673678139293891772, guid: 9c034cb313176c54f9abc8c6edc832a9, type: 3}
       propertyPath: m_Name
       value: GrassCContainer
+      objectReference: {fileID: 0}
+    - target: {fileID: 5681154402708745276, guid: 9c034cb313176c54f9abc8c6edc832a9, type: 3}
+      propertyPath: m_CastShadows
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5681154402708745276, guid: 9c034cb313176c54f9abc8c6edc832a9, type: 3}
+      propertyPath: m_RayTracingMode
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5681154402708745276, guid: 9c034cb313176c54f9abc8c6edc832a9, type: 3}
+      propertyPath: m_LightProbeUsage
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8587860825728384177, guid: 9c034cb313176c54f9abc8c6edc832a9, type: 3}
+      propertyPath: m_CastShadows
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8587860825728384177, guid: 9c034cb313176c54f9abc8c6edc832a9, type: 3}
+      propertyPath: m_RayTracingMode
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8587860825728384177, guid: 9c034cb313176c54f9abc8c6edc832a9, type: 3}
+      propertyPath: m_LightProbeUsage
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 9050770569408117066, guid: 9c034cb313176c54f9abc8c6edc832a9, type: 3}
+      propertyPath: m_CastShadows
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 9050770569408117066, guid: 9c034cb313176c54f9abc8c6edc832a9, type: 3}
+      propertyPath: m_RayTracingMode
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 9050770569408117066, guid: 9c034cb313176c54f9abc8c6edc832a9, type: 3}
+      propertyPath: m_LightProbeUsage
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -519,6 +604,18 @@ PrefabInstance:
     - target: {fileID: 4330724290494878519, guid: 6a38c3a6368864f45b1838b0085deca1, type: 3}
       propertyPath: m_Name
       value: PisoChunk (23)
+      objectReference: {fileID: 0}
+    - target: {fileID: 9164688353420843835, guid: 6a38c3a6368864f45b1838b0085deca1, type: 3}
+      propertyPath: m_CastShadows
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 9164688353420843835, guid: 6a38c3a6368864f45b1838b0085deca1, type: 3}
+      propertyPath: m_RayTracingMode
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 9164688353420843835, guid: 6a38c3a6368864f45b1838b0085deca1, type: 3}
+      propertyPath: m_LightProbeUsage
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents:
     - {fileID: 7249148723506407128, guid: 6a38c3a6368864f45b1838b0085deca1, type: 3}
@@ -595,6 +692,18 @@ PrefabInstance:
       propertyPath: m_Name
       value: PisoChunk (4)
       objectReference: {fileID: 0}
+    - target: {fileID: 9164688353420843835, guid: 6a38c3a6368864f45b1838b0085deca1, type: 3}
+      propertyPath: m_CastShadows
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 9164688353420843835, guid: 6a38c3a6368864f45b1838b0085deca1, type: 3}
+      propertyPath: m_RayTracingMode
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 9164688353420843835, guid: 6a38c3a6368864f45b1838b0085deca1, type: 3}
+      propertyPath: m_LightProbeUsage
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents:
     - {fileID: 7249148723506407128, guid: 6a38c3a6368864f45b1838b0085deca1, type: 3}
     m_RemovedGameObjects: []
@@ -670,6 +779,18 @@ PrefabInstance:
       propertyPath: m_Name
       value: PisoChunk (43)
       objectReference: {fileID: 0}
+    - target: {fileID: 9164688353420843835, guid: 6a38c3a6368864f45b1838b0085deca1, type: 3}
+      propertyPath: m_CastShadows
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 9164688353420843835, guid: 6a38c3a6368864f45b1838b0085deca1, type: 3}
+      propertyPath: m_RayTracingMode
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 9164688353420843835, guid: 6a38c3a6368864f45b1838b0085deca1, type: 3}
+      propertyPath: m_LightProbeUsage
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents:
     - {fileID: 7249148723506407128, guid: 6a38c3a6368864f45b1838b0085deca1, type: 3}
     m_RemovedGameObjects: []
@@ -692,6 +813,54 @@ PrefabInstance:
     - target: {fileID: 960528108253093453, guid: 155ceefb3c3612141832593143a23a19, type: 3}
       propertyPath: m_Name
       value: GrassGContainer (6)
+      objectReference: {fileID: 0}
+    - target: {fileID: 2086543824689104802, guid: 155ceefb3c3612141832593143a23a19, type: 3}
+      propertyPath: m_CastShadows
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2086543824689104802, guid: 155ceefb3c3612141832593143a23a19, type: 3}
+      propertyPath: m_RayTracingMode
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2086543824689104802, guid: 155ceefb3c3612141832593143a23a19, type: 3}
+      propertyPath: m_LightProbeUsage
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4072192460210243875, guid: 155ceefb3c3612141832593143a23a19, type: 3}
+      propertyPath: m_CastShadows
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4072192460210243875, guid: 155ceefb3c3612141832593143a23a19, type: 3}
+      propertyPath: m_RayTracingMode
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4072192460210243875, guid: 155ceefb3c3612141832593143a23a19, type: 3}
+      propertyPath: m_LightProbeUsage
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4568421323924962624, guid: 155ceefb3c3612141832593143a23a19, type: 3}
+      propertyPath: m_CastShadows
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4568421323924962624, guid: 155ceefb3c3612141832593143a23a19, type: 3}
+      propertyPath: m_RayTracingMode
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4568421323924962624, guid: 155ceefb3c3612141832593143a23a19, type: 3}
+      propertyPath: m_LightProbeUsage
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5931630038731110022, guid: 155ceefb3c3612141832593143a23a19, type: 3}
+      propertyPath: m_CastShadows
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5931630038731110022, guid: 155ceefb3c3612141832593143a23a19, type: 3}
+      propertyPath: m_RayTracingMode
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5931630038731110022, guid: 155ceefb3c3612141832593143a23a19, type: 3}
+      propertyPath: m_LightProbeUsage
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 7436399959585822590, guid: 155ceefb3c3612141832593143a23a19, type: 3}
       propertyPath: m_LocalScale.x
@@ -819,6 +988,18 @@ PrefabInstance:
       propertyPath: m_Name
       value: PisoChunk (29)
       objectReference: {fileID: 0}
+    - target: {fileID: 9164688353420843835, guid: 6a38c3a6368864f45b1838b0085deca1, type: 3}
+      propertyPath: m_CastShadows
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 9164688353420843835, guid: 6a38c3a6368864f45b1838b0085deca1, type: 3}
+      propertyPath: m_RayTracingMode
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 9164688353420843835, guid: 6a38c3a6368864f45b1838b0085deca1, type: 3}
+      propertyPath: m_LightProbeUsage
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents:
     - {fileID: 7249148723506407128, guid: 6a38c3a6368864f45b1838b0085deca1, type: 3}
     m_RemovedGameObjects: []
@@ -894,6 +1075,18 @@ PrefabInstance:
       propertyPath: m_Name
       value: PisoChunk (19)
       objectReference: {fileID: 0}
+    - target: {fileID: 9164688353420843835, guid: 6a38c3a6368864f45b1838b0085deca1, type: 3}
+      propertyPath: m_CastShadows
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 9164688353420843835, guid: 6a38c3a6368864f45b1838b0085deca1, type: 3}
+      propertyPath: m_RayTracingMode
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 9164688353420843835, guid: 6a38c3a6368864f45b1838b0085deca1, type: 3}
+      propertyPath: m_LightProbeUsage
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents:
     - {fileID: 7249148723506407128, guid: 6a38c3a6368864f45b1838b0085deca1, type: 3}
     m_RemovedGameObjects: []
@@ -913,6 +1106,42 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 1828046551553915461}
     m_Modifications:
+    - target: {fileID: 1842196322501737449, guid: e446554bc835ded4eb44e085171f2f48, type: 3}
+      propertyPath: m_CastShadows
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1842196322501737449, guid: e446554bc835ded4eb44e085171f2f48, type: 3}
+      propertyPath: m_RayTracingMode
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1842196322501737449, guid: e446554bc835ded4eb44e085171f2f48, type: 3}
+      propertyPath: m_LightProbeUsage
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2606216238743232771, guid: e446554bc835ded4eb44e085171f2f48, type: 3}
+      propertyPath: m_CastShadows
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2606216238743232771, guid: e446554bc835ded4eb44e085171f2f48, type: 3}
+      propertyPath: m_RayTracingMode
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2606216238743232771, guid: e446554bc835ded4eb44e085171f2f48, type: 3}
+      propertyPath: m_LightProbeUsage
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3754734003587571338, guid: e446554bc835ded4eb44e085171f2f48, type: 3}
+      propertyPath: m_CastShadows
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3754734003587571338, guid: e446554bc835ded4eb44e085171f2f48, type: 3}
+      propertyPath: m_RayTracingMode
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3754734003587571338, guid: e446554bc835ded4eb44e085171f2f48, type: 3}
+      propertyPath: m_LightProbeUsage
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 7917913354293681737, guid: e446554bc835ded4eb44e085171f2f48, type: 3}
       propertyPath: m_LocalScale.x
       value: 3.3333335
@@ -963,6 +1192,18 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7917913354293681737, guid: e446554bc835ded4eb44e085171f2f48, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8372195860268206633, guid: e446554bc835ded4eb44e085171f2f48, type: 3}
+      propertyPath: m_CastShadows
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8372195860268206633, guid: e446554bc835ded4eb44e085171f2f48, type: 3}
+      propertyPath: m_RayTracingMode
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8372195860268206633, guid: e446554bc835ded4eb44e085171f2f48, type: 3}
+      propertyPath: m_LightProbeUsage
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 8510249871020577060, guid: e446554bc835ded4eb44e085171f2f48, type: 3}
@@ -1043,6 +1284,18 @@ PrefabInstance:
       propertyPath: m_Name
       value: PisoChunk (41)
       objectReference: {fileID: 0}
+    - target: {fileID: 9164688353420843835, guid: 6a38c3a6368864f45b1838b0085deca1, type: 3}
+      propertyPath: m_CastShadows
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 9164688353420843835, guid: 6a38c3a6368864f45b1838b0085deca1, type: 3}
+      propertyPath: m_RayTracingMode
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 9164688353420843835, guid: 6a38c3a6368864f45b1838b0085deca1, type: 3}
+      propertyPath: m_LightProbeUsage
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents:
     - {fileID: 7249148723506407128, guid: 6a38c3a6368864f45b1838b0085deca1, type: 3}
     m_RemovedGameObjects: []
@@ -1117,6 +1370,18 @@ PrefabInstance:
     - target: {fileID: 4330724290494878519, guid: 6a38c3a6368864f45b1838b0085deca1, type: 3}
       propertyPath: m_Name
       value: PisoChunk (24)
+      objectReference: {fileID: 0}
+    - target: {fileID: 9164688353420843835, guid: 6a38c3a6368864f45b1838b0085deca1, type: 3}
+      propertyPath: m_CastShadows
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 9164688353420843835, guid: 6a38c3a6368864f45b1838b0085deca1, type: 3}
+      propertyPath: m_RayTracingMode
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 9164688353420843835, guid: 6a38c3a6368864f45b1838b0085deca1, type: 3}
+      propertyPath: m_LightProbeUsage
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents:
     - {fileID: 7249148723506407128, guid: 6a38c3a6368864f45b1838b0085deca1, type: 3}
@@ -1193,6 +1458,18 @@ PrefabInstance:
       propertyPath: m_Name
       value: PisoChunk (36)
       objectReference: {fileID: 0}
+    - target: {fileID: 9164688353420843835, guid: 6a38c3a6368864f45b1838b0085deca1, type: 3}
+      propertyPath: m_CastShadows
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 9164688353420843835, guid: 6a38c3a6368864f45b1838b0085deca1, type: 3}
+      propertyPath: m_RayTracingMode
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 9164688353420843835, guid: 6a38c3a6368864f45b1838b0085deca1, type: 3}
+      propertyPath: m_LightProbeUsage
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents:
     - {fileID: 7249148723506407128, guid: 6a38c3a6368864f45b1838b0085deca1, type: 3}
     m_RemovedGameObjects: []
@@ -1268,6 +1545,54 @@ PrefabInstance:
       propertyPath: m_Name
       value: GrassHContainer (7)
       objectReference: {fileID: 0}
+    - target: {fileID: 3286531685940367101, guid: 67af23288bb3dc946a163dc45d9c4cab, type: 3}
+      propertyPath: m_CastShadows
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3286531685940367101, guid: 67af23288bb3dc946a163dc45d9c4cab, type: 3}
+      propertyPath: m_RayTracingMode
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3286531685940367101, guid: 67af23288bb3dc946a163dc45d9c4cab, type: 3}
+      propertyPath: m_LightProbeUsage
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5151677427263387349, guid: 67af23288bb3dc946a163dc45d9c4cab, type: 3}
+      propertyPath: m_CastShadows
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5151677427263387349, guid: 67af23288bb3dc946a163dc45d9c4cab, type: 3}
+      propertyPath: m_RayTracingMode
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5151677427263387349, guid: 67af23288bb3dc946a163dc45d9c4cab, type: 3}
+      propertyPath: m_LightProbeUsage
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5659274510508469316, guid: 67af23288bb3dc946a163dc45d9c4cab, type: 3}
+      propertyPath: m_CastShadows
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5659274510508469316, guid: 67af23288bb3dc946a163dc45d9c4cab, type: 3}
+      propertyPath: m_RayTracingMode
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5659274510508469316, guid: 67af23288bb3dc946a163dc45d9c4cab, type: 3}
+      propertyPath: m_LightProbeUsage
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 9116043656102435498, guid: 67af23288bb3dc946a163dc45d9c4cab, type: 3}
+      propertyPath: m_CastShadows
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 9116043656102435498, guid: 67af23288bb3dc946a163dc45d9c4cab, type: 3}
+      propertyPath: m_RayTracingMode
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 9116043656102435498, guid: 67af23288bb3dc946a163dc45d9c4cab, type: 3}
+      propertyPath: m_LightProbeUsage
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -1341,6 +1666,18 @@ PrefabInstance:
     - target: {fileID: 4330724290494878519, guid: 6a38c3a6368864f45b1838b0085deca1, type: 3}
       propertyPath: m_Name
       value: PisoChunk (13)
+      objectReference: {fileID: 0}
+    - target: {fileID: 9164688353420843835, guid: 6a38c3a6368864f45b1838b0085deca1, type: 3}
+      propertyPath: m_CastShadows
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 9164688353420843835, guid: 6a38c3a6368864f45b1838b0085deca1, type: 3}
+      propertyPath: m_RayTracingMode
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 9164688353420843835, guid: 6a38c3a6368864f45b1838b0085deca1, type: 3}
+      propertyPath: m_LightProbeUsage
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents:
     - {fileID: 7249148723506407128, guid: 6a38c3a6368864f45b1838b0085deca1, type: 3}
@@ -1417,6 +1754,18 @@ PrefabInstance:
       propertyPath: m_Name
       value: PisoChunk (45)
       objectReference: {fileID: 0}
+    - target: {fileID: 9164688353420843835, guid: 6a38c3a6368864f45b1838b0085deca1, type: 3}
+      propertyPath: m_CastShadows
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 9164688353420843835, guid: 6a38c3a6368864f45b1838b0085deca1, type: 3}
+      propertyPath: m_RayTracingMode
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 9164688353420843835, guid: 6a38c3a6368864f45b1838b0085deca1, type: 3}
+      propertyPath: m_LightProbeUsage
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents:
     - {fileID: 7249148723506407128, guid: 6a38c3a6368864f45b1838b0085deca1, type: 3}
     m_RemovedGameObjects: []
@@ -1492,6 +1841,18 @@ PrefabInstance:
       propertyPath: m_Name
       value: PisoChunk (37)
       objectReference: {fileID: 0}
+    - target: {fileID: 9164688353420843835, guid: 6a38c3a6368864f45b1838b0085deca1, type: 3}
+      propertyPath: m_CastShadows
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 9164688353420843835, guid: 6a38c3a6368864f45b1838b0085deca1, type: 3}
+      propertyPath: m_RayTracingMode
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 9164688353420843835, guid: 6a38c3a6368864f45b1838b0085deca1, type: 3}
+      propertyPath: m_LightProbeUsage
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents:
     - {fileID: 7249148723506407128, guid: 6a38c3a6368864f45b1838b0085deca1, type: 3}
     m_RemovedGameObjects: []
@@ -1511,6 +1872,18 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 1828046551553915461}
     m_Modifications:
+    - target: {fileID: 142283953058598634, guid: c1e5bf4cf70be304eb0607e0a51b956b, type: 3}
+      propertyPath: m_CastShadows
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 142283953058598634, guid: c1e5bf4cf70be304eb0607e0a51b956b, type: 3}
+      propertyPath: m_RayTracingMode
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 142283953058598634, guid: c1e5bf4cf70be304eb0607e0a51b956b, type: 3}
+      propertyPath: m_LightProbeUsage
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 5278629858111175125, guid: c1e5bf4cf70be304eb0607e0a51b956b, type: 3}
       propertyPath: m_Name
       value: Stone_Stairs_Broken (1)
@@ -1641,6 +2014,18 @@ PrefabInstance:
       propertyPath: m_Name
       value: PisoChunk (46)
       objectReference: {fileID: 0}
+    - target: {fileID: 9164688353420843835, guid: 6a38c3a6368864f45b1838b0085deca1, type: 3}
+      propertyPath: m_CastShadows
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 9164688353420843835, guid: 6a38c3a6368864f45b1838b0085deca1, type: 3}
+      propertyPath: m_RayTracingMode
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 9164688353420843835, guid: 6a38c3a6368864f45b1838b0085deca1, type: 3}
+      propertyPath: m_LightProbeUsage
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents:
     - {fileID: 7249148723506407128, guid: 6a38c3a6368864f45b1838b0085deca1, type: 3}
     m_RemovedGameObjects: []
@@ -1660,6 +2045,18 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 1828046551553915461}
     m_Modifications:
+    - target: {fileID: 691723609793461919, guid: 7b18773ea70efdf4c9fd295e75c93569, type: 3}
+      propertyPath: m_CastShadows
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 691723609793461919, guid: 7b18773ea70efdf4c9fd295e75c93569, type: 3}
+      propertyPath: m_RayTracingMode
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 691723609793461919, guid: 7b18773ea70efdf4c9fd295e75c93569, type: 3}
+      propertyPath: m_LightProbeUsage
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 1331568781511254613, guid: 7b18773ea70efdf4c9fd295e75c93569, type: 3}
       propertyPath: m_Name
       value: GrassDContainer (2)
@@ -1716,6 +2113,42 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 3410856590037531884, guid: 7b18773ea70efdf4c9fd295e75c93569, type: 3}
+      propertyPath: m_CastShadows
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3410856590037531884, guid: 7b18773ea70efdf4c9fd295e75c93569, type: 3}
+      propertyPath: m_RayTracingMode
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3410856590037531884, guid: 7b18773ea70efdf4c9fd295e75c93569, type: 3}
+      propertyPath: m_LightProbeUsage
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5441413333074207592, guid: 7b18773ea70efdf4c9fd295e75c93569, type: 3}
+      propertyPath: m_CastShadows
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5441413333074207592, guid: 7b18773ea70efdf4c9fd295e75c93569, type: 3}
+      propertyPath: m_RayTracingMode
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5441413333074207592, guid: 7b18773ea70efdf4c9fd295e75c93569, type: 3}
+      propertyPath: m_LightProbeUsage
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7302015942864249441, guid: 7b18773ea70efdf4c9fd295e75c93569, type: 3}
+      propertyPath: m_CastShadows
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7302015942864249441, guid: 7b18773ea70efdf4c9fd295e75c93569, type: 3}
+      propertyPath: m_RayTracingMode
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7302015942864249441, guid: 7b18773ea70efdf4c9fd295e75c93569, type: 3}
+      propertyPath: m_LightProbeUsage
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -1737,6 +2170,18 @@ PrefabInstance:
     - target: {fileID: 1918710740531027354, guid: 286c492c98e55784683db692b341dd23, type: 3}
       propertyPath: m_Name
       value: Stone_Pillar_Broken
+      objectReference: {fileID: 0}
+    - target: {fileID: 2384044498289632667, guid: 286c492c98e55784683db692b341dd23, type: 3}
+      propertyPath: m_CastShadows
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2384044498289632667, guid: 286c492c98e55784683db692b341dd23, type: 3}
+      propertyPath: m_RayTracingMode
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2384044498289632667, guid: 286c492c98e55784683db692b341dd23, type: 3}
+      propertyPath: m_LightProbeUsage
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 7102653786547402982, guid: 286c492c98e55784683db692b341dd23, type: 3}
       propertyPath: m_LocalScale.x
@@ -1808,6 +2253,54 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 1828046551553915461}
     m_Modifications:
+    - target: {fileID: 1667668222599917217, guid: 2a63e41217220ba4d899fe15cbf8128d, type: 3}
+      propertyPath: m_CastShadows
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1667668222599917217, guid: 2a63e41217220ba4d899fe15cbf8128d, type: 3}
+      propertyPath: m_RayTracingMode
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1667668222599917217, guid: 2a63e41217220ba4d899fe15cbf8128d, type: 3}
+      propertyPath: m_LightProbeUsage
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1704238346683814436, guid: 2a63e41217220ba4d899fe15cbf8128d, type: 3}
+      propertyPath: m_CastShadows
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1704238346683814436, guid: 2a63e41217220ba4d899fe15cbf8128d, type: 3}
+      propertyPath: m_RayTracingMode
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1704238346683814436, guid: 2a63e41217220ba4d899fe15cbf8128d, type: 3}
+      propertyPath: m_LightProbeUsage
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2395668489245963600, guid: 2a63e41217220ba4d899fe15cbf8128d, type: 3}
+      propertyPath: m_CastShadows
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2395668489245963600, guid: 2a63e41217220ba4d899fe15cbf8128d, type: 3}
+      propertyPath: m_RayTracingMode
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2395668489245963600, guid: 2a63e41217220ba4d899fe15cbf8128d, type: 3}
+      propertyPath: m_LightProbeUsage
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4358615886910535663, guid: 2a63e41217220ba4d899fe15cbf8128d, type: 3}
+      propertyPath: m_CastShadows
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4358615886910535663, guid: 2a63e41217220ba4d899fe15cbf8128d, type: 3}
+      propertyPath: m_RayTracingMode
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4358615886910535663, guid: 2a63e41217220ba4d899fe15cbf8128d, type: 3}
+      propertyPath: m_LightProbeUsage
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 4786337468006018610, guid: 2a63e41217220ba4d899fe15cbf8128d, type: 3}
       propertyPath: m_LocalScale.x
       value: 3.3333335
@@ -1934,6 +2427,18 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 5551869565054174094, guid: fe8bbaba27cf50449a20945005c82cf7, type: 3}
+      propertyPath: m_CastShadows
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5551869565054174094, guid: fe8bbaba27cf50449a20945005c82cf7, type: 3}
+      propertyPath: m_RayTracingMode
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5551869565054174094, guid: fe8bbaba27cf50449a20945005c82cf7, type: 3}
+      propertyPath: m_LightProbeUsage
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 8298686416191312720, guid: fe8bbaba27cf50449a20945005c82cf7, type: 3}
       propertyPath: m_Name
       value: Small_Stone_Wall_Window (4)
@@ -1959,6 +2464,18 @@ PrefabInstance:
     - target: {fileID: 1237570068784306534, guid: a5e58aa5f7476824380a85a3a9a8ba79, type: 3}
       propertyPath: m_Name
       value: Stone_Bridge_Arch_Very_Broken (1)
+      objectReference: {fileID: 0}
+    - target: {fileID: 8693659561800237882, guid: a5e58aa5f7476824380a85a3a9a8ba79, type: 3}
+      propertyPath: m_CastShadows
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8693659561800237882, guid: a5e58aa5f7476824380a85a3a9a8ba79, type: 3}
+      propertyPath: m_RayTracingMode
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8693659561800237882, guid: a5e58aa5f7476824380a85a3a9a8ba79, type: 3}
+      propertyPath: m_LightProbeUsage
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 9105691379963350021, guid: a5e58aa5f7476824380a85a3a9a8ba79, type: 3}
       propertyPath: m_LocalScale.x
@@ -2086,6 +2603,18 @@ PrefabInstance:
       propertyPath: m_Name
       value: PisoChunk (16)
       objectReference: {fileID: 0}
+    - target: {fileID: 9164688353420843835, guid: 6a38c3a6368864f45b1838b0085deca1, type: 3}
+      propertyPath: m_CastShadows
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 9164688353420843835, guid: 6a38c3a6368864f45b1838b0085deca1, type: 3}
+      propertyPath: m_RayTracingMode
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 9164688353420843835, guid: 6a38c3a6368864f45b1838b0085deca1, type: 3}
+      propertyPath: m_LightProbeUsage
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents:
     - {fileID: 7249148723506407128, guid: 6a38c3a6368864f45b1838b0085deca1, type: 3}
     m_RemovedGameObjects: []
@@ -2160,6 +2689,18 @@ PrefabInstance:
     - target: {fileID: 4330724290494878519, guid: 6a38c3a6368864f45b1838b0085deca1, type: 3}
       propertyPath: m_Name
       value: PisoChunk
+      objectReference: {fileID: 0}
+    - target: {fileID: 9164688353420843835, guid: 6a38c3a6368864f45b1838b0085deca1, type: 3}
+      propertyPath: m_CastShadows
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 9164688353420843835, guid: 6a38c3a6368864f45b1838b0085deca1, type: 3}
+      propertyPath: m_RayTracingMode
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 9164688353420843835, guid: 6a38c3a6368864f45b1838b0085deca1, type: 3}
+      propertyPath: m_LightProbeUsage
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents:
     - {fileID: 7249148723506407128, guid: 6a38c3a6368864f45b1838b0085deca1, type: 3}
@@ -2236,6 +2777,18 @@ PrefabInstance:
       propertyPath: m_Name
       value: PisoChunk (15)
       objectReference: {fileID: 0}
+    - target: {fileID: 9164688353420843835, guid: 6a38c3a6368864f45b1838b0085deca1, type: 3}
+      propertyPath: m_CastShadows
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 9164688353420843835, guid: 6a38c3a6368864f45b1838b0085deca1, type: 3}
+      propertyPath: m_RayTracingMode
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 9164688353420843835, guid: 6a38c3a6368864f45b1838b0085deca1, type: 3}
+      propertyPath: m_LightProbeUsage
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents:
     - {fileID: 7249148723506407128, guid: 6a38c3a6368864f45b1838b0085deca1, type: 3}
     m_RemovedGameObjects: []
@@ -2310,6 +2863,18 @@ PrefabInstance:
     - target: {fileID: 4330724290494878519, guid: 6a38c3a6368864f45b1838b0085deca1, type: 3}
       propertyPath: m_Name
       value: PisoChunk (20)
+      objectReference: {fileID: 0}
+    - target: {fileID: 9164688353420843835, guid: 6a38c3a6368864f45b1838b0085deca1, type: 3}
+      propertyPath: m_CastShadows
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 9164688353420843835, guid: 6a38c3a6368864f45b1838b0085deca1, type: 3}
+      propertyPath: m_RayTracingMode
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 9164688353420843835, guid: 6a38c3a6368864f45b1838b0085deca1, type: 3}
+      propertyPath: m_LightProbeUsage
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents:
     - {fileID: 7249148723506407128, guid: 6a38c3a6368864f45b1838b0085deca1, type: 3}
@@ -2386,6 +2951,18 @@ PrefabInstance:
       propertyPath: m_Name
       value: PisoChunk (31)
       objectReference: {fileID: 0}
+    - target: {fileID: 9164688353420843835, guid: 6a38c3a6368864f45b1838b0085deca1, type: 3}
+      propertyPath: m_CastShadows
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 9164688353420843835, guid: 6a38c3a6368864f45b1838b0085deca1, type: 3}
+      propertyPath: m_RayTracingMode
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 9164688353420843835, guid: 6a38c3a6368864f45b1838b0085deca1, type: 3}
+      propertyPath: m_LightProbeUsage
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents:
     - {fileID: 7249148723506407128, guid: 6a38c3a6368864f45b1838b0085deca1, type: 3}
     m_RemovedGameObjects: []
@@ -2408,6 +2985,18 @@ PrefabInstance:
     - target: {fileID: 200891331686233732, guid: 54cef2c4c1bf2c34e93ab8783e4ca0aa, type: 3}
       propertyPath: m_Name
       value: TreeA (6)
+      objectReference: {fileID: 0}
+    - target: {fileID: 423167013067238773, guid: 54cef2c4c1bf2c34e93ab8783e4ca0aa, type: 3}
+      propertyPath: m_CastShadows
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 423167013067238773, guid: 54cef2c4c1bf2c34e93ab8783e4ca0aa, type: 3}
+      propertyPath: m_RayTracingMode
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 423167013067238773, guid: 54cef2c4c1bf2c34e93ab8783e4ca0aa, type: 3}
+      propertyPath: m_LightProbeUsage
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 6808644015688436986, guid: 54cef2c4c1bf2c34e93ab8783e4ca0aa, type: 3}
       propertyPath: m_LocalScale.x
@@ -2539,6 +3128,18 @@ PrefabInstance:
       propertyPath: m_Name
       value: PisoChunk (33)
       objectReference: {fileID: 0}
+    - target: {fileID: 9164688353420843835, guid: 6a38c3a6368864f45b1838b0085deca1, type: 3}
+      propertyPath: m_CastShadows
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 9164688353420843835, guid: 6a38c3a6368864f45b1838b0085deca1, type: 3}
+      propertyPath: m_RayTracingMode
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 9164688353420843835, guid: 6a38c3a6368864f45b1838b0085deca1, type: 3}
+      propertyPath: m_LightProbeUsage
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents:
     - {fileID: 7249148723506407128, guid: 6a38c3a6368864f45b1838b0085deca1, type: 3}
     m_RemovedGameObjects: []
@@ -2558,6 +3159,18 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 1828046551553915461}
     m_Modifications:
+    - target: {fileID: 169099813083006507, guid: 772828b5c18826a4384f3f1f28724c5e, type: 3}
+      propertyPath: m_CastShadows
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 169099813083006507, guid: 772828b5c18826a4384f3f1f28724c5e, type: 3}
+      propertyPath: m_RayTracingMode
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 169099813083006507, guid: 772828b5c18826a4384f3f1f28724c5e, type: 3}
+      propertyPath: m_LightProbeUsage
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 685960083290403141, guid: 772828b5c18826a4384f3f1f28724c5e, type: 3}
       propertyPath: m_Name
       value: Stone_Decorative_Pillar
@@ -2688,6 +3301,18 @@ PrefabInstance:
       propertyPath: m_Name
       value: PisoChunk (14)
       objectReference: {fileID: 0}
+    - target: {fileID: 9164688353420843835, guid: 6a38c3a6368864f45b1838b0085deca1, type: 3}
+      propertyPath: m_CastShadows
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 9164688353420843835, guid: 6a38c3a6368864f45b1838b0085deca1, type: 3}
+      propertyPath: m_RayTracingMode
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 9164688353420843835, guid: 6a38c3a6368864f45b1838b0085deca1, type: 3}
+      propertyPath: m_LightProbeUsage
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents:
     - {fileID: 7249148723506407128, guid: 6a38c3a6368864f45b1838b0085deca1, type: 3}
     m_RemovedGameObjects: []
@@ -2763,6 +3388,18 @@ PrefabInstance:
       propertyPath: m_Name
       value: PisoChunk (17)
       objectReference: {fileID: 0}
+    - target: {fileID: 9164688353420843835, guid: 6a38c3a6368864f45b1838b0085deca1, type: 3}
+      propertyPath: m_CastShadows
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 9164688353420843835, guid: 6a38c3a6368864f45b1838b0085deca1, type: 3}
+      propertyPath: m_RayTracingMode
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 9164688353420843835, guid: 6a38c3a6368864f45b1838b0085deca1, type: 3}
+      propertyPath: m_LightProbeUsage
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents:
     - {fileID: 7249148723506407128, guid: 6a38c3a6368864f45b1838b0085deca1, type: 3}
     m_RemovedGameObjects: []
@@ -2785,6 +3422,18 @@ PrefabInstance:
     - target: {fileID: 4747017376790098082, guid: cf6d0aa6b3dfee44181943e053ace696, type: 3}
       propertyPath: m_Name
       value: TreeD (23)
+      objectReference: {fileID: 0}
+    - target: {fileID: 6806206733719072129, guid: cf6d0aa6b3dfee44181943e053ace696, type: 3}
+      propertyPath: m_CastShadows
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6806206733719072129, guid: cf6d0aa6b3dfee44181943e053ace696, type: 3}
+      propertyPath: m_RayTracingMode
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6806206733719072129, guid: cf6d0aa6b3dfee44181943e053ace696, type: 3}
+      propertyPath: m_LightProbeUsage
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 8351040399874218464, guid: cf6d0aa6b3dfee44181943e053ace696, type: 3}
       propertyPath: m_LocalScale.x
@@ -2916,6 +3565,18 @@ PrefabInstance:
       propertyPath: m_Name
       value: PisoChunk (26)
       objectReference: {fileID: 0}
+    - target: {fileID: 9164688353420843835, guid: 6a38c3a6368864f45b1838b0085deca1, type: 3}
+      propertyPath: m_CastShadows
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 9164688353420843835, guid: 6a38c3a6368864f45b1838b0085deca1, type: 3}
+      propertyPath: m_RayTracingMode
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 9164688353420843835, guid: 6a38c3a6368864f45b1838b0085deca1, type: 3}
+      propertyPath: m_LightProbeUsage
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents:
     - {fileID: 7249148723506407128, guid: 6a38c3a6368864f45b1838b0085deca1, type: 3}
     m_RemovedGameObjects: []
@@ -2935,6 +3596,18 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 1828046551553915461}
     m_Modifications:
+    - target: {fileID: 1396194130323518175, guid: d8a4a63b10ad4fb4f9405fe3418dcb11, type: 3}
+      propertyPath: m_CastShadows
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1396194130323518175, guid: d8a4a63b10ad4fb4f9405fe3418dcb11, type: 3}
+      propertyPath: m_RayTracingMode
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1396194130323518175, guid: d8a4a63b10ad4fb4f9405fe3418dcb11, type: 3}
+      propertyPath: m_LightProbeUsage
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 1718553216064221281, guid: d8a4a63b10ad4fb4f9405fe3418dcb11, type: 3}
       propertyPath: m_LocalScale.x
       value: 3.3333335
@@ -3065,6 +3738,18 @@ PrefabInstance:
       propertyPath: m_Name
       value: PisoChunk (25)
       objectReference: {fileID: 0}
+    - target: {fileID: 9164688353420843835, guid: 6a38c3a6368864f45b1838b0085deca1, type: 3}
+      propertyPath: m_CastShadows
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 9164688353420843835, guid: 6a38c3a6368864f45b1838b0085deca1, type: 3}
+      propertyPath: m_RayTracingMode
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 9164688353420843835, guid: 6a38c3a6368864f45b1838b0085deca1, type: 3}
+      propertyPath: m_LightProbeUsage
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents:
     - {fileID: 7249148723506407128, guid: 6a38c3a6368864f45b1838b0085deca1, type: 3}
     m_RemovedGameObjects: []
@@ -3140,6 +3825,18 @@ PrefabInstance:
       propertyPath: m_Name
       value: PisoChunk (47)
       objectReference: {fileID: 0}
+    - target: {fileID: 9164688353420843835, guid: 6a38c3a6368864f45b1838b0085deca1, type: 3}
+      propertyPath: m_CastShadows
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 9164688353420843835, guid: 6a38c3a6368864f45b1838b0085deca1, type: 3}
+      propertyPath: m_RayTracingMode
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 9164688353420843835, guid: 6a38c3a6368864f45b1838b0085deca1, type: 3}
+      propertyPath: m_LightProbeUsage
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents:
     - {fileID: 7249148723506407128, guid: 6a38c3a6368864f45b1838b0085deca1, type: 3}
     m_RemovedGameObjects: []
@@ -3209,6 +3906,18 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4275479056760533992, guid: fe8bbaba27cf50449a20945005c82cf7, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5551869565054174094, guid: fe8bbaba27cf50449a20945005c82cf7, type: 3}
+      propertyPath: m_CastShadows
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5551869565054174094, guid: fe8bbaba27cf50449a20945005c82cf7, type: 3}
+      propertyPath: m_RayTracingMode
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5551869565054174094, guid: fe8bbaba27cf50449a20945005c82cf7, type: 3}
+      propertyPath: m_LightProbeUsage
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 8298686416191312720, guid: fe8bbaba27cf50449a20945005c82cf7, type: 3}
@@ -3289,6 +3998,18 @@ PrefabInstance:
       propertyPath: m_Name
       value: PisoChunk (1)
       objectReference: {fileID: 0}
+    - target: {fileID: 9164688353420843835, guid: 6a38c3a6368864f45b1838b0085deca1, type: 3}
+      propertyPath: m_CastShadows
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 9164688353420843835, guid: 6a38c3a6368864f45b1838b0085deca1, type: 3}
+      propertyPath: m_RayTracingMode
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 9164688353420843835, guid: 6a38c3a6368864f45b1838b0085deca1, type: 3}
+      propertyPath: m_LightProbeUsage
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents:
     - {fileID: 7249148723506407128, guid: 6a38c3a6368864f45b1838b0085deca1, type: 3}
     m_RemovedGameObjects: []
@@ -3364,6 +4085,18 @@ PrefabInstance:
       propertyPath: m_Name
       value: PisoChunk (9)
       objectReference: {fileID: 0}
+    - target: {fileID: 9164688353420843835, guid: 6a38c3a6368864f45b1838b0085deca1, type: 3}
+      propertyPath: m_CastShadows
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 9164688353420843835, guid: 6a38c3a6368864f45b1838b0085deca1, type: 3}
+      propertyPath: m_RayTracingMode
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 9164688353420843835, guid: 6a38c3a6368864f45b1838b0085deca1, type: 3}
+      propertyPath: m_LightProbeUsage
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents:
     - {fileID: 7249148723506407128, guid: 6a38c3a6368864f45b1838b0085deca1, type: 3}
     m_RemovedGameObjects: []
@@ -3386,6 +4119,18 @@ PrefabInstance:
     - target: {fileID: 200891331686233732, guid: 54cef2c4c1bf2c34e93ab8783e4ca0aa, type: 3}
       propertyPath: m_Name
       value: TreeA (9)
+      objectReference: {fileID: 0}
+    - target: {fileID: 423167013067238773, guid: 54cef2c4c1bf2c34e93ab8783e4ca0aa, type: 3}
+      propertyPath: m_CastShadows
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 423167013067238773, guid: 54cef2c4c1bf2c34e93ab8783e4ca0aa, type: 3}
+      propertyPath: m_RayTracingMode
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 423167013067238773, guid: 54cef2c4c1bf2c34e93ab8783e4ca0aa, type: 3}
+      propertyPath: m_LightProbeUsage
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 6808644015688436986, guid: 54cef2c4c1bf2c34e93ab8783e4ca0aa, type: 3}
       propertyPath: m_LocalScale.x
@@ -3464,6 +4209,18 @@ PrefabInstance:
     - target: {fileID: 4747017376790098082, guid: cf6d0aa6b3dfee44181943e053ace696, type: 3}
       propertyPath: m_Name
       value: TreeD (14)
+      objectReference: {fileID: 0}
+    - target: {fileID: 6806206733719072129, guid: cf6d0aa6b3dfee44181943e053ace696, type: 3}
+      propertyPath: m_CastShadows
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6806206733719072129, guid: cf6d0aa6b3dfee44181943e053ace696, type: 3}
+      propertyPath: m_RayTracingMode
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6806206733719072129, guid: cf6d0aa6b3dfee44181943e053ace696, type: 3}
+      propertyPath: m_LightProbeUsage
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 8351040399874218464, guid: cf6d0aa6b3dfee44181943e053ace696, type: 3}
       propertyPath: m_LocalScale.x
@@ -3591,9 +4348,57 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 4918395725543324880, guid: 9c034cb313176c54f9abc8c6edc832a9, type: 3}
+      propertyPath: m_CastShadows
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4918395725543324880, guid: 9c034cb313176c54f9abc8c6edc832a9, type: 3}
+      propertyPath: m_RayTracingMode
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4918395725543324880, guid: 9c034cb313176c54f9abc8c6edc832a9, type: 3}
+      propertyPath: m_LightProbeUsage
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 5673678139293891772, guid: 9c034cb313176c54f9abc8c6edc832a9, type: 3}
       propertyPath: m_Name
       value: GrassCContainer (5)
+      objectReference: {fileID: 0}
+    - target: {fileID: 5681154402708745276, guid: 9c034cb313176c54f9abc8c6edc832a9, type: 3}
+      propertyPath: m_CastShadows
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5681154402708745276, guid: 9c034cb313176c54f9abc8c6edc832a9, type: 3}
+      propertyPath: m_RayTracingMode
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5681154402708745276, guid: 9c034cb313176c54f9abc8c6edc832a9, type: 3}
+      propertyPath: m_LightProbeUsage
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8587860825728384177, guid: 9c034cb313176c54f9abc8c6edc832a9, type: 3}
+      propertyPath: m_CastShadows
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8587860825728384177, guid: 9c034cb313176c54f9abc8c6edc832a9, type: 3}
+      propertyPath: m_RayTracingMode
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8587860825728384177, guid: 9c034cb313176c54f9abc8c6edc832a9, type: 3}
+      propertyPath: m_LightProbeUsage
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 9050770569408117066, guid: 9c034cb313176c54f9abc8c6edc832a9, type: 3}
+      propertyPath: m_CastShadows
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 9050770569408117066, guid: 9c034cb313176c54f9abc8c6edc832a9, type: 3}
+      propertyPath: m_RayTracingMode
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 9050770569408117066, guid: 9c034cb313176c54f9abc8c6edc832a9, type: 3}
+      propertyPath: m_LightProbeUsage
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -3616,6 +4421,18 @@ PrefabInstance:
     - target: {fileID: 4747017376790098082, guid: cf6d0aa6b3dfee44181943e053ace696, type: 3}
       propertyPath: m_Name
       value: TreeD (20)
+      objectReference: {fileID: 0}
+    - target: {fileID: 6806206733719072129, guid: cf6d0aa6b3dfee44181943e053ace696, type: 3}
+      propertyPath: m_CastShadows
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6806206733719072129, guid: cf6d0aa6b3dfee44181943e053ace696, type: 3}
+      propertyPath: m_RayTracingMode
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6806206733719072129, guid: cf6d0aa6b3dfee44181943e053ace696, type: 3}
+      propertyPath: m_LightProbeUsage
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 8351040399874218464, guid: cf6d0aa6b3dfee44181943e053ace696, type: 3}
       propertyPath: m_LocalScale.x
@@ -3683,6 +4500,80 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 8351040399874218464, guid: cf6d0aa6b3dfee44181943e053ace696, type: 3}
   m_PrefabInstance: {fileID: 3829080645799167958}
   m_PrefabAsset: {fileID: 0}
+--- !u!1001 &3846573745638184522
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 1828046551553915461}
+    m_Modifications:
+    - target: {fileID: 7333367475621616386, guid: f54f37147ac4c734caefd9fe7a112029, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7333367475621616386, guid: f54f37147ac4c734caefd9fe7a112029, type: 3}
+      propertyPath: m_LocalScale.y
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7333367475621616386, guid: f54f37147ac4c734caefd9fe7a112029, type: 3}
+      propertyPath: m_LocalScale.z
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7333367475621616386, guid: f54f37147ac4c734caefd9fe7a112029, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -6.1666665
+      objectReference: {fileID: 0}
+    - target: {fileID: 7333367475621616386, guid: f54f37147ac4c734caefd9fe7a112029, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7333367475621616386, guid: f54f37147ac4c734caefd9fe7a112029, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 4.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 7333367475621616386, guid: f54f37147ac4c734caefd9fe7a112029, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 0.7071078
+      objectReference: {fileID: 0}
+    - target: {fileID: 7333367475621616386, guid: f54f37147ac4c734caefd9fe7a112029, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0.00000024234478
+      objectReference: {fileID: 0}
+    - target: {fileID: 7333367475621616386, guid: f54f37147ac4c734caefd9fe7a112029, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0.70710576
+      objectReference: {fileID: 0}
+    - target: {fileID: 7333367475621616386, guid: f54f37147ac4c734caefd9fe7a112029, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0.0000002423441
+      objectReference: {fileID: 0}
+    - target: {fileID: 7333367475621616386, guid: f54f37147ac4c734caefd9fe7a112029, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7333367475621616386, guid: f54f37147ac4c734caefd9fe7a112029, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 90
+      objectReference: {fileID: 0}
+    - target: {fileID: 7333367475621616386, guid: f54f37147ac4c734caefd9fe7a112029, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8686576279565198471, guid: f54f37147ac4c734caefd9fe7a112029, type: 3}
+      propertyPath: m_Name
+      value: FOG_PS
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: f54f37147ac4c734caefd9fe7a112029, type: 3}
+--- !u!4 &5810941683655757128 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 7333367475621616386, guid: f54f37147ac4c734caefd9fe7a112029, type: 3}
+  m_PrefabInstance: {fileID: 3846573745638184522}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &3907784299127426909
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -3691,6 +4582,54 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 1828046551553915461}
     m_Modifications:
+    - target: {fileID: 1667668222599917217, guid: 2a63e41217220ba4d899fe15cbf8128d, type: 3}
+      propertyPath: m_CastShadows
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1667668222599917217, guid: 2a63e41217220ba4d899fe15cbf8128d, type: 3}
+      propertyPath: m_RayTracingMode
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1667668222599917217, guid: 2a63e41217220ba4d899fe15cbf8128d, type: 3}
+      propertyPath: m_LightProbeUsage
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1704238346683814436, guid: 2a63e41217220ba4d899fe15cbf8128d, type: 3}
+      propertyPath: m_CastShadows
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1704238346683814436, guid: 2a63e41217220ba4d899fe15cbf8128d, type: 3}
+      propertyPath: m_RayTracingMode
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1704238346683814436, guid: 2a63e41217220ba4d899fe15cbf8128d, type: 3}
+      propertyPath: m_LightProbeUsage
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2395668489245963600, guid: 2a63e41217220ba4d899fe15cbf8128d, type: 3}
+      propertyPath: m_CastShadows
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2395668489245963600, guid: 2a63e41217220ba4d899fe15cbf8128d, type: 3}
+      propertyPath: m_RayTracingMode
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2395668489245963600, guid: 2a63e41217220ba4d899fe15cbf8128d, type: 3}
+      propertyPath: m_LightProbeUsage
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4358615886910535663, guid: 2a63e41217220ba4d899fe15cbf8128d, type: 3}
+      propertyPath: m_CastShadows
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4358615886910535663, guid: 2a63e41217220ba4d899fe15cbf8128d, type: 3}
+      propertyPath: m_RayTracingMode
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4358615886910535663, guid: 2a63e41217220ba4d899fe15cbf8128d, type: 3}
+      propertyPath: m_LightProbeUsage
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 4786337468006018610, guid: 2a63e41217220ba4d899fe15cbf8128d, type: 3}
       propertyPath: m_LocalScale.x
       value: 3.3333335
@@ -3769,6 +4708,18 @@ PrefabInstance:
       propertyPath: m_Name
       value: TreeD (21)
       objectReference: {fileID: 0}
+    - target: {fileID: 6806206733719072129, guid: cf6d0aa6b3dfee44181943e053ace696, type: 3}
+      propertyPath: m_CastShadows
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6806206733719072129, guid: cf6d0aa6b3dfee44181943e053ace696, type: 3}
+      propertyPath: m_RayTracingMode
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6806206733719072129, guid: cf6d0aa6b3dfee44181943e053ace696, type: 3}
+      propertyPath: m_LightProbeUsage
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 8351040399874218464, guid: cf6d0aa6b3dfee44181943e053ace696, type: 3}
       propertyPath: m_LocalScale.x
       value: 1.6666667
@@ -3846,6 +4797,18 @@ PrefabInstance:
     - target: {fileID: 4747017376790098082, guid: cf6d0aa6b3dfee44181943e053ace696, type: 3}
       propertyPath: m_Name
       value: TreeD (12)
+      objectReference: {fileID: 0}
+    - target: {fileID: 6806206733719072129, guid: cf6d0aa6b3dfee44181943e053ace696, type: 3}
+      propertyPath: m_CastShadows
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6806206733719072129, guid: cf6d0aa6b3dfee44181943e053ace696, type: 3}
+      propertyPath: m_RayTracingMode
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6806206733719072129, guid: cf6d0aa6b3dfee44181943e053ace696, type: 3}
+      propertyPath: m_LightProbeUsage
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 8351040399874218464, guid: cf6d0aa6b3dfee44181943e053ace696, type: 3}
       propertyPath: m_LocalScale.x
@@ -3977,6 +4940,18 @@ PrefabInstance:
       propertyPath: m_Name
       value: PisoChunk (10)
       objectReference: {fileID: 0}
+    - target: {fileID: 9164688353420843835, guid: 6a38c3a6368864f45b1838b0085deca1, type: 3}
+      propertyPath: m_CastShadows
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 9164688353420843835, guid: 6a38c3a6368864f45b1838b0085deca1, type: 3}
+      propertyPath: m_RayTracingMode
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 9164688353420843835, guid: 6a38c3a6368864f45b1838b0085deca1, type: 3}
+      propertyPath: m_LightProbeUsage
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents:
     - {fileID: 7249148723506407128, guid: 6a38c3a6368864f45b1838b0085deca1, type: 3}
     m_RemovedGameObjects: []
@@ -4052,6 +5027,18 @@ PrefabInstance:
       propertyPath: m_Name
       value: PisoChunk (34)
       objectReference: {fileID: 0}
+    - target: {fileID: 9164688353420843835, guid: 6a38c3a6368864f45b1838b0085deca1, type: 3}
+      propertyPath: m_CastShadows
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 9164688353420843835, guid: 6a38c3a6368864f45b1838b0085deca1, type: 3}
+      propertyPath: m_RayTracingMode
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 9164688353420843835, guid: 6a38c3a6368864f45b1838b0085deca1, type: 3}
+      propertyPath: m_LightProbeUsage
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents:
     - {fileID: 7249148723506407128, guid: 6a38c3a6368864f45b1838b0085deca1, type: 3}
     m_RemovedGameObjects: []
@@ -4071,6 +5058,42 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 1828046551553915461}
     m_Modifications:
+    - target: {fileID: 1842196322501737449, guid: e446554bc835ded4eb44e085171f2f48, type: 3}
+      propertyPath: m_CastShadows
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1842196322501737449, guid: e446554bc835ded4eb44e085171f2f48, type: 3}
+      propertyPath: m_RayTracingMode
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1842196322501737449, guid: e446554bc835ded4eb44e085171f2f48, type: 3}
+      propertyPath: m_LightProbeUsage
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2606216238743232771, guid: e446554bc835ded4eb44e085171f2f48, type: 3}
+      propertyPath: m_CastShadows
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2606216238743232771, guid: e446554bc835ded4eb44e085171f2f48, type: 3}
+      propertyPath: m_RayTracingMode
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2606216238743232771, guid: e446554bc835ded4eb44e085171f2f48, type: 3}
+      propertyPath: m_LightProbeUsage
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3754734003587571338, guid: e446554bc835ded4eb44e085171f2f48, type: 3}
+      propertyPath: m_CastShadows
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3754734003587571338, guid: e446554bc835ded4eb44e085171f2f48, type: 3}
+      propertyPath: m_RayTracingMode
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3754734003587571338, guid: e446554bc835ded4eb44e085171f2f48, type: 3}
+      propertyPath: m_LightProbeUsage
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 7917913354293681737, guid: e446554bc835ded4eb44e085171f2f48, type: 3}
       propertyPath: m_LocalScale.x
       value: 3.3333335
@@ -4121,6 +5144,18 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7917913354293681737, guid: e446554bc835ded4eb44e085171f2f48, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8372195860268206633, guid: e446554bc835ded4eb44e085171f2f48, type: 3}
+      propertyPath: m_CastShadows
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8372195860268206633, guid: e446554bc835ded4eb44e085171f2f48, type: 3}
+      propertyPath: m_RayTracingMode
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8372195860268206633, guid: e446554bc835ded4eb44e085171f2f48, type: 3}
+      propertyPath: m_LightProbeUsage
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 8510249871020577060, guid: e446554bc835ded4eb44e085171f2f48, type: 3}
@@ -4201,6 +5236,18 @@ PrefabInstance:
       propertyPath: m_Name
       value: PisoChunk (11)
       objectReference: {fileID: 0}
+    - target: {fileID: 9164688353420843835, guid: 6a38c3a6368864f45b1838b0085deca1, type: 3}
+      propertyPath: m_CastShadows
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 9164688353420843835, guid: 6a38c3a6368864f45b1838b0085deca1, type: 3}
+      propertyPath: m_RayTracingMode
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 9164688353420843835, guid: 6a38c3a6368864f45b1838b0085deca1, type: 3}
+      propertyPath: m_LightProbeUsage
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents:
     - {fileID: 7249148723506407128, guid: 6a38c3a6368864f45b1838b0085deca1, type: 3}
     m_RemovedGameObjects: []
@@ -4223,6 +5270,18 @@ PrefabInstance:
     - target: {fileID: 200891331686233732, guid: 54cef2c4c1bf2c34e93ab8783e4ca0aa, type: 3}
       propertyPath: m_Name
       value: TreeA (7)
+      objectReference: {fileID: 0}
+    - target: {fileID: 423167013067238773, guid: 54cef2c4c1bf2c34e93ab8783e4ca0aa, type: 3}
+      propertyPath: m_CastShadows
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 423167013067238773, guid: 54cef2c4c1bf2c34e93ab8783e4ca0aa, type: 3}
+      propertyPath: m_RayTracingMode
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 423167013067238773, guid: 54cef2c4c1bf2c34e93ab8783e4ca0aa, type: 3}
+      propertyPath: m_LightProbeUsage
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 6808644015688436986, guid: 54cef2c4c1bf2c34e93ab8783e4ca0aa, type: 3}
       propertyPath: m_LocalScale.x
@@ -4354,6 +5413,18 @@ PrefabInstance:
       propertyPath: m_Name
       value: PisoChunk (18)
       objectReference: {fileID: 0}
+    - target: {fileID: 9164688353420843835, guid: 6a38c3a6368864f45b1838b0085deca1, type: 3}
+      propertyPath: m_CastShadows
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 9164688353420843835, guid: 6a38c3a6368864f45b1838b0085deca1, type: 3}
+      propertyPath: m_RayTracingMode
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 9164688353420843835, guid: 6a38c3a6368864f45b1838b0085deca1, type: 3}
+      propertyPath: m_LightProbeUsage
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents:
     - {fileID: 7249148723506407128, guid: 6a38c3a6368864f45b1838b0085deca1, type: 3}
     m_RemovedGameObjects: []
@@ -4428,6 +5499,18 @@ PrefabInstance:
     - target: {fileID: 4330724290494878519, guid: 6a38c3a6368864f45b1838b0085deca1, type: 3}
       propertyPath: m_Name
       value: PisoChunk (49)
+      objectReference: {fileID: 0}
+    - target: {fileID: 9164688353420843835, guid: 6a38c3a6368864f45b1838b0085deca1, type: 3}
+      propertyPath: m_CastShadows
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 9164688353420843835, guid: 6a38c3a6368864f45b1838b0085deca1, type: 3}
+      propertyPath: m_RayTracingMode
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 9164688353420843835, guid: 6a38c3a6368864f45b1838b0085deca1, type: 3}
+      propertyPath: m_LightProbeUsage
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents:
     - {fileID: 7249148723506407128, guid: 6a38c3a6368864f45b1838b0085deca1, type: 3}
@@ -4504,6 +5587,18 @@ PrefabInstance:
       propertyPath: m_Name
       value: PisoChunk (44)
       objectReference: {fileID: 0}
+    - target: {fileID: 9164688353420843835, guid: 6a38c3a6368864f45b1838b0085deca1, type: 3}
+      propertyPath: m_CastShadows
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 9164688353420843835, guid: 6a38c3a6368864f45b1838b0085deca1, type: 3}
+      propertyPath: m_RayTracingMode
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 9164688353420843835, guid: 6a38c3a6368864f45b1838b0085deca1, type: 3}
+      propertyPath: m_LightProbeUsage
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents:
     - {fileID: 7249148723506407128, guid: 6a38c3a6368864f45b1838b0085deca1, type: 3}
     m_RemovedGameObjects: []
@@ -4526,6 +5621,18 @@ PrefabInstance:
     - target: {fileID: 4747017376790098082, guid: cf6d0aa6b3dfee44181943e053ace696, type: 3}
       propertyPath: m_Name
       value: TreeD (18)
+      objectReference: {fileID: 0}
+    - target: {fileID: 6806206733719072129, guid: cf6d0aa6b3dfee44181943e053ace696, type: 3}
+      propertyPath: m_CastShadows
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6806206733719072129, guid: cf6d0aa6b3dfee44181943e053ace696, type: 3}
+      propertyPath: m_RayTracingMode
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6806206733719072129, guid: cf6d0aa6b3dfee44181943e053ace696, type: 3}
+      propertyPath: m_LightProbeUsage
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 8351040399874218464, guid: cf6d0aa6b3dfee44181943e053ace696, type: 3}
       propertyPath: m_LocalScale.x
@@ -4657,6 +5764,18 @@ PrefabInstance:
       propertyPath: m_Name
       value: PisoChunk (28)
       objectReference: {fileID: 0}
+    - target: {fileID: 9164688353420843835, guid: 6a38c3a6368864f45b1838b0085deca1, type: 3}
+      propertyPath: m_CastShadows
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 9164688353420843835, guid: 6a38c3a6368864f45b1838b0085deca1, type: 3}
+      propertyPath: m_RayTracingMode
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 9164688353420843835, guid: 6a38c3a6368864f45b1838b0085deca1, type: 3}
+      propertyPath: m_LightProbeUsage
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents:
     - {fileID: 7249148723506407128, guid: 6a38c3a6368864f45b1838b0085deca1, type: 3}
     m_RemovedGameObjects: []
@@ -4676,6 +5795,18 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 1828046551553915461}
     m_Modifications:
+    - target: {fileID: 4084567543164276334, guid: 4048729fce6cde142b8c090e3a0b2484, type: 3}
+      propertyPath: m_CastShadows
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4084567543164276334, guid: 4048729fce6cde142b8c090e3a0b2484, type: 3}
+      propertyPath: m_RayTracingMode
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4084567543164276334, guid: 4048729fce6cde142b8c090e3a0b2484, type: 3}
+      propertyPath: m_LightProbeUsage
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 4096971338813534281, guid: 4048729fce6cde142b8c090e3a0b2484, type: 3}
       propertyPath: m_LocalScale.x
       value: 3.3333335
@@ -4806,6 +5937,18 @@ PrefabInstance:
       propertyPath: m_Name
       value: PisoChunk (42)
       objectReference: {fileID: 0}
+    - target: {fileID: 9164688353420843835, guid: 6a38c3a6368864f45b1838b0085deca1, type: 3}
+      propertyPath: m_CastShadows
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 9164688353420843835, guid: 6a38c3a6368864f45b1838b0085deca1, type: 3}
+      propertyPath: m_RayTracingMode
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 9164688353420843835, guid: 6a38c3a6368864f45b1838b0085deca1, type: 3}
+      propertyPath: m_LightProbeUsage
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents:
     - {fileID: 7249148723506407128, guid: 6a38c3a6368864f45b1838b0085deca1, type: 3}
     m_RemovedGameObjects: []
@@ -4881,6 +6024,18 @@ PrefabInstance:
       propertyPath: m_Name
       value: PisoChunk (38)
       objectReference: {fileID: 0}
+    - target: {fileID: 9164688353420843835, guid: 6a38c3a6368864f45b1838b0085deca1, type: 3}
+      propertyPath: m_CastShadows
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 9164688353420843835, guid: 6a38c3a6368864f45b1838b0085deca1, type: 3}
+      propertyPath: m_RayTracingMode
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 9164688353420843835, guid: 6a38c3a6368864f45b1838b0085deca1, type: 3}
+      propertyPath: m_LightProbeUsage
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents:
     - {fileID: 7249148723506407128, guid: 6a38c3a6368864f45b1838b0085deca1, type: 3}
     m_RemovedGameObjects: []
@@ -4903,6 +6058,18 @@ PrefabInstance:
     - target: {fileID: 4747017376790098082, guid: cf6d0aa6b3dfee44181943e053ace696, type: 3}
       propertyPath: m_Name
       value: TreeD (13)
+      objectReference: {fileID: 0}
+    - target: {fileID: 6806206733719072129, guid: cf6d0aa6b3dfee44181943e053ace696, type: 3}
+      propertyPath: m_CastShadows
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6806206733719072129, guid: cf6d0aa6b3dfee44181943e053ace696, type: 3}
+      propertyPath: m_RayTracingMode
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6806206733719072129, guid: cf6d0aa6b3dfee44181943e053ace696, type: 3}
+      propertyPath: m_LightProbeUsage
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 8351040399874218464, guid: cf6d0aa6b3dfee44181943e053ace696, type: 3}
       propertyPath: m_LocalScale.x
@@ -5034,6 +6201,54 @@ PrefabInstance:
       propertyPath: m_Name
       value: GrassEContainer (4)
       objectReference: {fileID: 0}
+    - target: {fileID: 4273231662494725369, guid: 6867111eb4d266a47a7c42ffc4d3bbb3, type: 3}
+      propertyPath: m_CastShadows
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4273231662494725369, guid: 6867111eb4d266a47a7c42ffc4d3bbb3, type: 3}
+      propertyPath: m_RayTracingMode
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4273231662494725369, guid: 6867111eb4d266a47a7c42ffc4d3bbb3, type: 3}
+      propertyPath: m_LightProbeUsage
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7722309083328374974, guid: 6867111eb4d266a47a7c42ffc4d3bbb3, type: 3}
+      propertyPath: m_CastShadows
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7722309083328374974, guid: 6867111eb4d266a47a7c42ffc4d3bbb3, type: 3}
+      propertyPath: m_RayTracingMode
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7722309083328374974, guid: 6867111eb4d266a47a7c42ffc4d3bbb3, type: 3}
+      propertyPath: m_LightProbeUsage
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7947087830754309276, guid: 6867111eb4d266a47a7c42ffc4d3bbb3, type: 3}
+      propertyPath: m_CastShadows
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7947087830754309276, guid: 6867111eb4d266a47a7c42ffc4d3bbb3, type: 3}
+      propertyPath: m_RayTracingMode
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7947087830754309276, guid: 6867111eb4d266a47a7c42ffc4d3bbb3, type: 3}
+      propertyPath: m_LightProbeUsage
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8187767236946528978, guid: 6867111eb4d266a47a7c42ffc4d3bbb3, type: 3}
+      propertyPath: m_CastShadows
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8187767236946528978, guid: 6867111eb4d266a47a7c42ffc4d3bbb3, type: 3}
+      propertyPath: m_RayTracingMode
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8187767236946528978, guid: 6867111eb4d266a47a7c42ffc4d3bbb3, type: 3}
+      propertyPath: m_LightProbeUsage
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -5104,6 +6319,18 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 3848894606251893693, guid: 16afb2bb517451d40b9410d0823d2425, type: 3}
+      propertyPath: m_CastShadows
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3848894606251893693, guid: 16afb2bb517451d40b9410d0823d2425, type: 3}
+      propertyPath: m_RayTracingMode
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3848894606251893693, guid: 16afb2bb517451d40b9410d0823d2425, type: 3}
+      propertyPath: m_LightProbeUsage
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 7285993102890575194, guid: 16afb2bb517451d40b9410d0823d2425, type: 3}
       propertyPath: m_Name
       value: Stone_Bridge_Arch_Broken
@@ -5126,6 +6353,18 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 1828046551553915461}
     m_Modifications:
+    - target: {fileID: 169099813083006507, guid: 772828b5c18826a4384f3f1f28724c5e, type: 3}
+      propertyPath: m_CastShadows
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 169099813083006507, guid: 772828b5c18826a4384f3f1f28724c5e, type: 3}
+      propertyPath: m_RayTracingMode
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 169099813083006507, guid: 772828b5c18826a4384f3f1f28724c5e, type: 3}
+      propertyPath: m_LightProbeUsage
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 685960083290403141, guid: 772828b5c18826a4384f3f1f28724c5e, type: 3}
       propertyPath: m_Name
       value: Stone_Decorative_Pillar (5)
@@ -5256,6 +6495,18 @@ PrefabInstance:
       propertyPath: m_Name
       value: PisoChunk (30)
       objectReference: {fileID: 0}
+    - target: {fileID: 9164688353420843835, guid: 6a38c3a6368864f45b1838b0085deca1, type: 3}
+      propertyPath: m_CastShadows
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 9164688353420843835, guid: 6a38c3a6368864f45b1838b0085deca1, type: 3}
+      propertyPath: m_RayTracingMode
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 9164688353420843835, guid: 6a38c3a6368864f45b1838b0085deca1, type: 3}
+      propertyPath: m_LightProbeUsage
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents:
     - {fileID: 7249148723506407128, guid: 6a38c3a6368864f45b1838b0085deca1, type: 3}
     m_RemovedGameObjects: []
@@ -5325,6 +6576,18 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1099224002423433444, guid: 37d9d78a296572a4c92315c6d4167157, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6916840789732672030, guid: 37d9d78a296572a4c92315c6d4167157, type: 3}
+      propertyPath: m_CastShadows
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6916840789732672030, guid: 37d9d78a296572a4c92315c6d4167157, type: 3}
+      propertyPath: m_RayTracingMode
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6916840789732672030, guid: 37d9d78a296572a4c92315c6d4167157, type: 3}
+      propertyPath: m_LightProbeUsage
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 8193657792334524285, guid: 37d9d78a296572a4c92315c6d4167157, type: 3}
@@ -5405,6 +6668,18 @@ PrefabInstance:
       propertyPath: m_Name
       value: PisoChunk (22)
       objectReference: {fileID: 0}
+    - target: {fileID: 9164688353420843835, guid: 6a38c3a6368864f45b1838b0085deca1, type: 3}
+      propertyPath: m_CastShadows
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 9164688353420843835, guid: 6a38c3a6368864f45b1838b0085deca1, type: 3}
+      propertyPath: m_RayTracingMode
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 9164688353420843835, guid: 6a38c3a6368864f45b1838b0085deca1, type: 3}
+      propertyPath: m_LightProbeUsage
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents:
     - {fileID: 7249148723506407128, guid: 6a38c3a6368864f45b1838b0085deca1, type: 3}
     m_RemovedGameObjects: []
@@ -5424,9 +6699,57 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 1828046551553915461}
     m_Modifications:
+    - target: {fileID: 745343959361481200, guid: 997aea99ee00e5747b748eec2cf652e0, type: 3}
+      propertyPath: m_CastShadows
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 745343959361481200, guid: 997aea99ee00e5747b748eec2cf652e0, type: 3}
+      propertyPath: m_RayTracingMode
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 745343959361481200, guid: 997aea99ee00e5747b748eec2cf652e0, type: 3}
+      propertyPath: m_LightProbeUsage
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 2751473932116524281, guid: 997aea99ee00e5747b748eec2cf652e0, type: 3}
       propertyPath: m_Name
       value: GrassFContainer (5)
+      objectReference: {fileID: 0}
+    - target: {fileID: 4026970470091245179, guid: 997aea99ee00e5747b748eec2cf652e0, type: 3}
+      propertyPath: m_CastShadows
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4026970470091245179, guid: 997aea99ee00e5747b748eec2cf652e0, type: 3}
+      propertyPath: m_RayTracingMode
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4026970470091245179, guid: 997aea99ee00e5747b748eec2cf652e0, type: 3}
+      propertyPath: m_LightProbeUsage
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6124565463280469679, guid: 997aea99ee00e5747b748eec2cf652e0, type: 3}
+      propertyPath: m_CastShadows
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6124565463280469679, guid: 997aea99ee00e5747b748eec2cf652e0, type: 3}
+      propertyPath: m_RayTracingMode
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6124565463280469679, guid: 997aea99ee00e5747b748eec2cf652e0, type: 3}
+      propertyPath: m_LightProbeUsage
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8873355870056915429, guid: 997aea99ee00e5747b748eec2cf652e0, type: 3}
+      propertyPath: m_CastShadows
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8873355870056915429, guid: 997aea99ee00e5747b748eec2cf652e0, type: 3}
+      propertyPath: m_RayTracingMode
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8873355870056915429, guid: 997aea99ee00e5747b748eec2cf652e0, type: 3}
+      propertyPath: m_LightProbeUsage
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 8930400329309097745, guid: 997aea99ee00e5747b748eec2cf652e0, type: 3}
       propertyPath: m_LocalScale.x
@@ -5554,6 +6877,18 @@ PrefabInstance:
       propertyPath: m_Name
       value: PisoChunk (27)
       objectReference: {fileID: 0}
+    - target: {fileID: 9164688353420843835, guid: 6a38c3a6368864f45b1838b0085deca1, type: 3}
+      propertyPath: m_CastShadows
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 9164688353420843835, guid: 6a38c3a6368864f45b1838b0085deca1, type: 3}
+      propertyPath: m_RayTracingMode
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 9164688353420843835, guid: 6a38c3a6368864f45b1838b0085deca1, type: 3}
+      propertyPath: m_LightProbeUsage
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents:
     - {fileID: 7249148723506407128, guid: 6a38c3a6368864f45b1838b0085deca1, type: 3}
     m_RemovedGameObjects: []
@@ -5628,6 +6963,18 @@ PrefabInstance:
     - target: {fileID: 4330724290494878519, guid: 6a38c3a6368864f45b1838b0085deca1, type: 3}
       propertyPath: m_Name
       value: PisoChunk (51)
+      objectReference: {fileID: 0}
+    - target: {fileID: 9164688353420843835, guid: 6a38c3a6368864f45b1838b0085deca1, type: 3}
+      propertyPath: m_CastShadows
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 9164688353420843835, guid: 6a38c3a6368864f45b1838b0085deca1, type: 3}
+      propertyPath: m_RayTracingMode
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 9164688353420843835, guid: 6a38c3a6368864f45b1838b0085deca1, type: 3}
+      propertyPath: m_LightProbeUsage
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents:
     - {fileID: 7249148723506407128, guid: 6a38c3a6368864f45b1838b0085deca1, type: 3}
@@ -5704,6 +7051,18 @@ PrefabInstance:
       propertyPath: m_Name
       value: PisoChunk (3)
       objectReference: {fileID: 0}
+    - target: {fileID: 9164688353420843835, guid: 6a38c3a6368864f45b1838b0085deca1, type: 3}
+      propertyPath: m_CastShadows
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 9164688353420843835, guid: 6a38c3a6368864f45b1838b0085deca1, type: 3}
+      propertyPath: m_RayTracingMode
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 9164688353420843835, guid: 6a38c3a6368864f45b1838b0085deca1, type: 3}
+      propertyPath: m_LightProbeUsage
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents:
     - {fileID: 7249148723506407128, guid: 6a38c3a6368864f45b1838b0085deca1, type: 3}
     m_RemovedGameObjects: []
@@ -5723,6 +7082,18 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 1828046551553915461}
     m_Modifications:
+    - target: {fileID: 1584739770774419092, guid: 0bd6bed8793159f4d9eb472c3ac317ed, type: 3}
+      propertyPath: m_CastShadows
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1584739770774419092, guid: 0bd6bed8793159f4d9eb472c3ac317ed, type: 3}
+      propertyPath: m_RayTracingMode
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1584739770774419092, guid: 0bd6bed8793159f4d9eb472c3ac317ed, type: 3}
+      propertyPath: m_LightProbeUsage
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 3525539914330840259, guid: 0bd6bed8793159f4d9eb472c3ac317ed, type: 3}
       propertyPath: m_LocalScale.x
       value: 3.3333335
@@ -5853,6 +7224,18 @@ PrefabInstance:
       propertyPath: m_ConstrainProportionsScale
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 2938267158939716268, guid: 47a451537389db346a0704c56294add9, type: 3}
+      propertyPath: m_CastShadows
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2938267158939716268, guid: 47a451537389db346a0704c56294add9, type: 3}
+      propertyPath: m_RayTracingMode
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2938267158939716268, guid: 47a451537389db346a0704c56294add9, type: 3}
+      propertyPath: m_LightProbeUsage
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 4635226619107482948, guid: 47a451537389db346a0704c56294add9, type: 3}
       propertyPath: m_Name
       value: Small_RockF (1)
@@ -5931,6 +7314,18 @@ PrefabInstance:
       propertyPath: m_Name
       value: PisoChunk (50)
       objectReference: {fileID: 0}
+    - target: {fileID: 9164688353420843835, guid: 6a38c3a6368864f45b1838b0085deca1, type: 3}
+      propertyPath: m_CastShadows
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 9164688353420843835, guid: 6a38c3a6368864f45b1838b0085deca1, type: 3}
+      propertyPath: m_RayTracingMode
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 9164688353420843835, guid: 6a38c3a6368864f45b1838b0085deca1, type: 3}
+      propertyPath: m_LightProbeUsage
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents:
     - {fileID: 7249148723506407128, guid: 6a38c3a6368864f45b1838b0085deca1, type: 3}
     m_RemovedGameObjects: []
@@ -6005,6 +7400,18 @@ PrefabInstance:
     - target: {fileID: 4330724290494878519, guid: 6a38c3a6368864f45b1838b0085deca1, type: 3}
       propertyPath: m_Name
       value: PisoChunk (8)
+      objectReference: {fileID: 0}
+    - target: {fileID: 9164688353420843835, guid: 6a38c3a6368864f45b1838b0085deca1, type: 3}
+      propertyPath: m_CastShadows
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 9164688353420843835, guid: 6a38c3a6368864f45b1838b0085deca1, type: 3}
+      propertyPath: m_RayTracingMode
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 9164688353420843835, guid: 6a38c3a6368864f45b1838b0085deca1, type: 3}
+      propertyPath: m_LightProbeUsage
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents:
     - {fileID: 7249148723506407128, guid: 6a38c3a6368864f45b1838b0085deca1, type: 3}
@@ -6081,6 +7488,18 @@ PrefabInstance:
       propertyPath: m_Name
       value: PisoChunk (5)
       objectReference: {fileID: 0}
+    - target: {fileID: 9164688353420843835, guid: 6a38c3a6368864f45b1838b0085deca1, type: 3}
+      propertyPath: m_CastShadows
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 9164688353420843835, guid: 6a38c3a6368864f45b1838b0085deca1, type: 3}
+      propertyPath: m_RayTracingMode
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 9164688353420843835, guid: 6a38c3a6368864f45b1838b0085deca1, type: 3}
+      propertyPath: m_LightProbeUsage
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents:
     - {fileID: 7249148723506407128, guid: 6a38c3a6368864f45b1838b0085deca1, type: 3}
     m_RemovedGameObjects: []
@@ -6103,6 +7522,18 @@ PrefabInstance:
     - target: {fileID: 200891331686233732, guid: 54cef2c4c1bf2c34e93ab8783e4ca0aa, type: 3}
       propertyPath: m_Name
       value: TreeA (5)
+      objectReference: {fileID: 0}
+    - target: {fileID: 423167013067238773, guid: 54cef2c4c1bf2c34e93ab8783e4ca0aa, type: 3}
+      propertyPath: m_CastShadows
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 423167013067238773, guid: 54cef2c4c1bf2c34e93ab8783e4ca0aa, type: 3}
+      propertyPath: m_RayTracingMode
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 423167013067238773, guid: 54cef2c4c1bf2c34e93ab8783e4ca0aa, type: 3}
+      propertyPath: m_LightProbeUsage
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 6808644015688436986, guid: 54cef2c4c1bf2c34e93ab8783e4ca0aa, type: 3}
       propertyPath: m_LocalScale.x
@@ -6181,6 +7612,18 @@ PrefabInstance:
     - target: {fileID: 4747017376790098082, guid: cf6d0aa6b3dfee44181943e053ace696, type: 3}
       propertyPath: m_Name
       value: TreeD (17)
+      objectReference: {fileID: 0}
+    - target: {fileID: 6806206733719072129, guid: cf6d0aa6b3dfee44181943e053ace696, type: 3}
+      propertyPath: m_CastShadows
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6806206733719072129, guid: cf6d0aa6b3dfee44181943e053ace696, type: 3}
+      propertyPath: m_RayTracingMode
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6806206733719072129, guid: cf6d0aa6b3dfee44181943e053ace696, type: 3}
+      propertyPath: m_LightProbeUsage
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 8351040399874218464, guid: cf6d0aa6b3dfee44181943e053ace696, type: 3}
       propertyPath: m_LocalScale.x
@@ -6312,6 +7755,18 @@ PrefabInstance:
       propertyPath: m_Name
       value: PisoChunk (21)
       objectReference: {fileID: 0}
+    - target: {fileID: 9164688353420843835, guid: 6a38c3a6368864f45b1838b0085deca1, type: 3}
+      propertyPath: m_CastShadows
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 9164688353420843835, guid: 6a38c3a6368864f45b1838b0085deca1, type: 3}
+      propertyPath: m_RayTracingMode
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 9164688353420843835, guid: 6a38c3a6368864f45b1838b0085deca1, type: 3}
+      propertyPath: m_LightProbeUsage
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents:
     - {fileID: 7249148723506407128, guid: 6a38c3a6368864f45b1838b0085deca1, type: 3}
     m_RemovedGameObjects: []
@@ -6334,6 +7789,18 @@ PrefabInstance:
     - target: {fileID: 4747017376790098082, guid: cf6d0aa6b3dfee44181943e053ace696, type: 3}
       propertyPath: m_Name
       value: TreeD (16)
+      objectReference: {fileID: 0}
+    - target: {fileID: 6806206733719072129, guid: cf6d0aa6b3dfee44181943e053ace696, type: 3}
+      propertyPath: m_CastShadows
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6806206733719072129, guid: cf6d0aa6b3dfee44181943e053ace696, type: 3}
+      propertyPath: m_RayTracingMode
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6806206733719072129, guid: cf6d0aa6b3dfee44181943e053ace696, type: 3}
+      propertyPath: m_LightProbeUsage
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 8351040399874218464, guid: cf6d0aa6b3dfee44181943e053ace696, type: 3}
       propertyPath: m_LocalScale.x
@@ -6409,6 +7876,18 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 1828046551553915461}
     m_Modifications:
+    - target: {fileID: 1396194130323518175, guid: d8a4a63b10ad4fb4f9405fe3418dcb11, type: 3}
+      propertyPath: m_CastShadows
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1396194130323518175, guid: d8a4a63b10ad4fb4f9405fe3418dcb11, type: 3}
+      propertyPath: m_RayTracingMode
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1396194130323518175, guid: d8a4a63b10ad4fb4f9405fe3418dcb11, type: 3}
+      propertyPath: m_LightProbeUsage
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 1718553216064221281, guid: d8a4a63b10ad4fb4f9405fe3418dcb11, type: 3}
       propertyPath: m_LocalScale.x
       value: 3.3333335
@@ -6539,6 +8018,18 @@ PrefabInstance:
       propertyPath: m_Name
       value: PisoChunk (32)
       objectReference: {fileID: 0}
+    - target: {fileID: 9164688353420843835, guid: 6a38c3a6368864f45b1838b0085deca1, type: 3}
+      propertyPath: m_CastShadows
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 9164688353420843835, guid: 6a38c3a6368864f45b1838b0085deca1, type: 3}
+      propertyPath: m_RayTracingMode
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 9164688353420843835, guid: 6a38c3a6368864f45b1838b0085deca1, type: 3}
+      propertyPath: m_LightProbeUsage
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents:
     - {fileID: 7249148723506407128, guid: 6a38c3a6368864f45b1838b0085deca1, type: 3}
     m_RemovedGameObjects: []
@@ -6561,6 +8052,18 @@ PrefabInstance:
     - target: {fileID: 200891331686233732, guid: 54cef2c4c1bf2c34e93ab8783e4ca0aa, type: 3}
       propertyPath: m_Name
       value: TreeA (8)
+      objectReference: {fileID: 0}
+    - target: {fileID: 423167013067238773, guid: 54cef2c4c1bf2c34e93ab8783e4ca0aa, type: 3}
+      propertyPath: m_CastShadows
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 423167013067238773, guid: 54cef2c4c1bf2c34e93ab8783e4ca0aa, type: 3}
+      propertyPath: m_RayTracingMode
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 423167013067238773, guid: 54cef2c4c1bf2c34e93ab8783e4ca0aa, type: 3}
+      propertyPath: m_LightProbeUsage
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 6808644015688436986, guid: 54cef2c4c1bf2c34e93ab8783e4ca0aa, type: 3}
       propertyPath: m_LocalScale.x
@@ -6692,6 +8195,18 @@ PrefabInstance:
       propertyPath: m_Name
       value: PisoChunk (12)
       objectReference: {fileID: 0}
+    - target: {fileID: 9164688353420843835, guid: 6a38c3a6368864f45b1838b0085deca1, type: 3}
+      propertyPath: m_CastShadows
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 9164688353420843835, guid: 6a38c3a6368864f45b1838b0085deca1, type: 3}
+      propertyPath: m_RayTracingMode
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 9164688353420843835, guid: 6a38c3a6368864f45b1838b0085deca1, type: 3}
+      propertyPath: m_LightProbeUsage
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents:
     - {fileID: 7249148723506407128, guid: 6a38c3a6368864f45b1838b0085deca1, type: 3}
     m_RemovedGameObjects: []
@@ -6767,6 +8282,18 @@ PrefabInstance:
       propertyPath: m_Name
       value: PisoChunk (48)
       objectReference: {fileID: 0}
+    - target: {fileID: 9164688353420843835, guid: 6a38c3a6368864f45b1838b0085deca1, type: 3}
+      propertyPath: m_CastShadows
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 9164688353420843835, guid: 6a38c3a6368864f45b1838b0085deca1, type: 3}
+      propertyPath: m_RayTracingMode
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 9164688353420843835, guid: 6a38c3a6368864f45b1838b0085deca1, type: 3}
+      propertyPath: m_LightProbeUsage
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents:
     - {fileID: 7249148723506407128, guid: 6a38c3a6368864f45b1838b0085deca1, type: 3}
     m_RemovedGameObjects: []
@@ -6786,6 +8313,42 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 1828046551553915461}
     m_Modifications:
+    - target: {fileID: 1842196322501737449, guid: e446554bc835ded4eb44e085171f2f48, type: 3}
+      propertyPath: m_CastShadows
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1842196322501737449, guid: e446554bc835ded4eb44e085171f2f48, type: 3}
+      propertyPath: m_RayTracingMode
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1842196322501737449, guid: e446554bc835ded4eb44e085171f2f48, type: 3}
+      propertyPath: m_LightProbeUsage
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2606216238743232771, guid: e446554bc835ded4eb44e085171f2f48, type: 3}
+      propertyPath: m_CastShadows
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2606216238743232771, guid: e446554bc835ded4eb44e085171f2f48, type: 3}
+      propertyPath: m_RayTracingMode
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2606216238743232771, guid: e446554bc835ded4eb44e085171f2f48, type: 3}
+      propertyPath: m_LightProbeUsage
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3754734003587571338, guid: e446554bc835ded4eb44e085171f2f48, type: 3}
+      propertyPath: m_CastShadows
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3754734003587571338, guid: e446554bc835ded4eb44e085171f2f48, type: 3}
+      propertyPath: m_RayTracingMode
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3754734003587571338, guid: e446554bc835ded4eb44e085171f2f48, type: 3}
+      propertyPath: m_LightProbeUsage
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 7917913354293681737, guid: e446554bc835ded4eb44e085171f2f48, type: 3}
       propertyPath: m_LocalScale.x
       value: 3.3333335
@@ -6836,6 +8399,18 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7917913354293681737, guid: e446554bc835ded4eb44e085171f2f48, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8372195860268206633, guid: e446554bc835ded4eb44e085171f2f48, type: 3}
+      propertyPath: m_CastShadows
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8372195860268206633, guid: e446554bc835ded4eb44e085171f2f48, type: 3}
+      propertyPath: m_RayTracingMode
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8372195860268206633, guid: e446554bc835ded4eb44e085171f2f48, type: 3}
+      propertyPath: m_LightProbeUsage
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 8510249871020577060, guid: e446554bc835ded4eb44e085171f2f48, type: 3}
@@ -6916,6 +8491,18 @@ PrefabInstance:
       propertyPath: m_Name
       value: PisoChunk (39)
       objectReference: {fileID: 0}
+    - target: {fileID: 9164688353420843835, guid: 6a38c3a6368864f45b1838b0085deca1, type: 3}
+      propertyPath: m_CastShadows
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 9164688353420843835, guid: 6a38c3a6368864f45b1838b0085deca1, type: 3}
+      propertyPath: m_RayTracingMode
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 9164688353420843835, guid: 6a38c3a6368864f45b1838b0085deca1, type: 3}
+      propertyPath: m_LightProbeUsage
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents:
     - {fileID: 7249148723506407128, guid: 6a38c3a6368864f45b1838b0085deca1, type: 3}
     m_RemovedGameObjects: []
@@ -6991,6 +8578,18 @@ PrefabInstance:
       propertyPath: m_Name
       value: PisoChunk (52)
       objectReference: {fileID: 0}
+    - target: {fileID: 9164688353420843835, guid: 6a38c3a6368864f45b1838b0085deca1, type: 3}
+      propertyPath: m_CastShadows
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 9164688353420843835, guid: 6a38c3a6368864f45b1838b0085deca1, type: 3}
+      propertyPath: m_RayTracingMode
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 9164688353420843835, guid: 6a38c3a6368864f45b1838b0085deca1, type: 3}
+      propertyPath: m_LightProbeUsage
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents:
     - {fileID: 7249148723506407128, guid: 6a38c3a6368864f45b1838b0085deca1, type: 3}
     m_RemovedGameObjects: []
@@ -7062,6 +8661,18 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 1713646801242221516, guid: 868b227a50ad9ed489af254f7ce2a6ff, type: 3}
+      propertyPath: m_CastShadows
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1713646801242221516, guid: 868b227a50ad9ed489af254f7ce2a6ff, type: 3}
+      propertyPath: m_RayTracingMode
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1713646801242221516, guid: 868b227a50ad9ed489af254f7ce2a6ff, type: 3}
+      propertyPath: m_LightProbeUsage
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 4265273219389872910, guid: 868b227a50ad9ed489af254f7ce2a6ff, type: 3}
       propertyPath: m_Name
       value: Stone_Archway_Broken (1)
@@ -7084,6 +8695,18 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 1828046551553915461}
     m_Modifications:
+    - target: {fileID: 3487408742634750349, guid: 8a3a6512d7988ff4a967f853761ad4a7, type: 3}
+      propertyPath: m_CastShadows
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3487408742634750349, guid: 8a3a6512d7988ff4a967f853761ad4a7, type: 3}
+      propertyPath: m_RayTracingMode
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3487408742634750349, guid: 8a3a6512d7988ff4a967f853761ad4a7, type: 3}
+      propertyPath: m_LightProbeUsage
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 4048191891182153002, guid: 8a3a6512d7988ff4a967f853761ad4a7, type: 3}
       propertyPath: m_Name
       value: Stone_Pedestal_Broken
@@ -7158,6 +8781,18 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 1828046551553915461}
     m_Modifications:
+    - target: {fileID: 169099813083006507, guid: 772828b5c18826a4384f3f1f28724c5e, type: 3}
+      propertyPath: m_CastShadows
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 169099813083006507, guid: 772828b5c18826a4384f3f1f28724c5e, type: 3}
+      propertyPath: m_RayTracingMode
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 169099813083006507, guid: 772828b5c18826a4384f3f1f28724c5e, type: 3}
+      propertyPath: m_LightProbeUsage
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 685960083290403141, guid: 772828b5c18826a4384f3f1f28724c5e, type: 3}
       propertyPath: m_Name
       value: Stone_Decorative_Pillar (4)
@@ -7288,6 +8923,18 @@ PrefabInstance:
       propertyPath: m_Name
       value: Tall_Stone_Wall_Plain
       objectReference: {fileID: 0}
+    - target: {fileID: 8832128527813006726, guid: 30fd37fc8817c3845a15589a52346767, type: 3}
+      propertyPath: m_CastShadows
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8832128527813006726, guid: 30fd37fc8817c3845a15589a52346767, type: 3}
+      propertyPath: m_RayTracingMode
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8832128527813006726, guid: 30fd37fc8817c3845a15589a52346767, type: 3}
+      propertyPath: m_LightProbeUsage
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -7361,6 +9008,18 @@ PrefabInstance:
     - target: {fileID: 4330724290494878519, guid: 6a38c3a6368864f45b1838b0085deca1, type: 3}
       propertyPath: m_Name
       value: PisoChunk (53)
+      objectReference: {fileID: 0}
+    - target: {fileID: 9164688353420843835, guid: 6a38c3a6368864f45b1838b0085deca1, type: 3}
+      propertyPath: m_CastShadows
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 9164688353420843835, guid: 6a38c3a6368864f45b1838b0085deca1, type: 3}
+      propertyPath: m_RayTracingMode
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 9164688353420843835, guid: 6a38c3a6368864f45b1838b0085deca1, type: 3}
+      propertyPath: m_LightProbeUsage
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents:
     - {fileID: 7249148723506407128, guid: 6a38c3a6368864f45b1838b0085deca1, type: 3}
@@ -7437,6 +9096,18 @@ PrefabInstance:
       propertyPath: m_Name
       value: PisoChunk (6)
       objectReference: {fileID: 0}
+    - target: {fileID: 9164688353420843835, guid: 6a38c3a6368864f45b1838b0085deca1, type: 3}
+      propertyPath: m_CastShadows
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 9164688353420843835, guid: 6a38c3a6368864f45b1838b0085deca1, type: 3}
+      propertyPath: m_RayTracingMode
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 9164688353420843835, guid: 6a38c3a6368864f45b1838b0085deca1, type: 3}
+      propertyPath: m_LightProbeUsage
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents:
     - {fileID: 7249148723506407128, guid: 6a38c3a6368864f45b1838b0085deca1, type: 3}
     m_RemovedGameObjects: []
@@ -7506,6 +9177,18 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4275479056760533992, guid: fe8bbaba27cf50449a20945005c82cf7, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5551869565054174094, guid: fe8bbaba27cf50449a20945005c82cf7, type: 3}
+      propertyPath: m_CastShadows
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5551869565054174094, guid: fe8bbaba27cf50449a20945005c82cf7, type: 3}
+      propertyPath: m_RayTracingMode
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5551869565054174094, guid: fe8bbaba27cf50449a20945005c82cf7, type: 3}
+      propertyPath: m_LightProbeUsage
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 8298686416191312720, guid: fe8bbaba27cf50449a20945005c82cf7, type: 3}
@@ -7586,6 +9269,18 @@ PrefabInstance:
       propertyPath: m_Name
       value: PisoChunk (7)
       objectReference: {fileID: 0}
+    - target: {fileID: 9164688353420843835, guid: 6a38c3a6368864f45b1838b0085deca1, type: 3}
+      propertyPath: m_CastShadows
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 9164688353420843835, guid: 6a38c3a6368864f45b1838b0085deca1, type: 3}
+      propertyPath: m_RayTracingMode
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 9164688353420843835, guid: 6a38c3a6368864f45b1838b0085deca1, type: 3}
+      propertyPath: m_LightProbeUsage
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents:
     - {fileID: 7249148723506407128, guid: 6a38c3a6368864f45b1838b0085deca1, type: 3}
     m_RemovedGameObjects: []
@@ -7605,6 +9300,18 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 1828046551553915461}
     m_Modifications:
+    - target: {fileID: 169099813083006507, guid: 772828b5c18826a4384f3f1f28724c5e, type: 3}
+      propertyPath: m_CastShadows
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 169099813083006507, guid: 772828b5c18826a4384f3f1f28724c5e, type: 3}
+      propertyPath: m_RayTracingMode
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 169099813083006507, guid: 772828b5c18826a4384f3f1f28724c5e, type: 3}
+      propertyPath: m_LightProbeUsage
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 685960083290403141, guid: 772828b5c18826a4384f3f1f28724c5e, type: 3}
       propertyPath: m_Name
       value: Stone_Decorative_Pillar (2)
@@ -7679,6 +9386,18 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 1828046551553915461}
     m_Modifications:
+    - target: {fileID: 4084567543164276334, guid: 4048729fce6cde142b8c090e3a0b2484, type: 3}
+      propertyPath: m_CastShadows
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4084567543164276334, guid: 4048729fce6cde142b8c090e3a0b2484, type: 3}
+      propertyPath: m_RayTracingMode
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4084567543164276334, guid: 4048729fce6cde142b8c090e3a0b2484, type: 3}
+      propertyPath: m_LightProbeUsage
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 4096971338813534281, guid: 4048729fce6cde142b8c090e3a0b2484, type: 3}
       propertyPath: m_LocalScale.x
       value: 3.3333335
@@ -7753,6 +9472,18 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 1828046551553915461}
     m_Modifications:
+    - target: {fileID: 691723609793461919, guid: 7b18773ea70efdf4c9fd295e75c93569, type: 3}
+      propertyPath: m_CastShadows
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 691723609793461919, guid: 7b18773ea70efdf4c9fd295e75c93569, type: 3}
+      propertyPath: m_RayTracingMode
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 691723609793461919, guid: 7b18773ea70efdf4c9fd295e75c93569, type: 3}
+      propertyPath: m_LightProbeUsage
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 1331568781511254613, guid: 7b18773ea70efdf4c9fd295e75c93569, type: 3}
       propertyPath: m_Name
       value: GrassDContainer
@@ -7807,6 +9538,42 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2468987338116161473, guid: 7b18773ea70efdf4c9fd295e75c93569, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3410856590037531884, guid: 7b18773ea70efdf4c9fd295e75c93569, type: 3}
+      propertyPath: m_CastShadows
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3410856590037531884, guid: 7b18773ea70efdf4c9fd295e75c93569, type: 3}
+      propertyPath: m_RayTracingMode
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3410856590037531884, guid: 7b18773ea70efdf4c9fd295e75c93569, type: 3}
+      propertyPath: m_LightProbeUsage
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5441413333074207592, guid: 7b18773ea70efdf4c9fd295e75c93569, type: 3}
+      propertyPath: m_CastShadows
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5441413333074207592, guid: 7b18773ea70efdf4c9fd295e75c93569, type: 3}
+      propertyPath: m_RayTracingMode
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5441413333074207592, guid: 7b18773ea70efdf4c9fd295e75c93569, type: 3}
+      propertyPath: m_LightProbeUsage
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7302015942864249441, guid: 7b18773ea70efdf4c9fd295e75c93569, type: 3}
+      propertyPath: m_CastShadows
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7302015942864249441, guid: 7b18773ea70efdf4c9fd295e75c93569, type: 3}
+      propertyPath: m_RayTracingMode
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7302015942864249441, guid: 7b18773ea70efdf4c9fd295e75c93569, type: 3}
+      propertyPath: m_LightProbeUsage
       value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
@@ -7879,9 +9646,57 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 4918395725543324880, guid: 9c034cb313176c54f9abc8c6edc832a9, type: 3}
+      propertyPath: m_CastShadows
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4918395725543324880, guid: 9c034cb313176c54f9abc8c6edc832a9, type: 3}
+      propertyPath: m_RayTracingMode
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4918395725543324880, guid: 9c034cb313176c54f9abc8c6edc832a9, type: 3}
+      propertyPath: m_LightProbeUsage
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 5673678139293891772, guid: 9c034cb313176c54f9abc8c6edc832a9, type: 3}
       propertyPath: m_Name
       value: GrassCContainer (4)
+      objectReference: {fileID: 0}
+    - target: {fileID: 5681154402708745276, guid: 9c034cb313176c54f9abc8c6edc832a9, type: 3}
+      propertyPath: m_CastShadows
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5681154402708745276, guid: 9c034cb313176c54f9abc8c6edc832a9, type: 3}
+      propertyPath: m_RayTracingMode
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5681154402708745276, guid: 9c034cb313176c54f9abc8c6edc832a9, type: 3}
+      propertyPath: m_LightProbeUsage
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8587860825728384177, guid: 9c034cb313176c54f9abc8c6edc832a9, type: 3}
+      propertyPath: m_CastShadows
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8587860825728384177, guid: 9c034cb313176c54f9abc8c6edc832a9, type: 3}
+      propertyPath: m_RayTracingMode
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8587860825728384177, guid: 9c034cb313176c54f9abc8c6edc832a9, type: 3}
+      propertyPath: m_LightProbeUsage
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 9050770569408117066, guid: 9c034cb313176c54f9abc8c6edc832a9, type: 3}
+      propertyPath: m_CastShadows
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 9050770569408117066, guid: 9c034cb313176c54f9abc8c6edc832a9, type: 3}
+      propertyPath: m_RayTracingMode
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 9050770569408117066, guid: 9c034cb313176c54f9abc8c6edc832a9, type: 3}
+      propertyPath: m_LightProbeUsage
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -7901,6 +9716,18 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 1828046551553915461}
     m_Modifications:
+    - target: {fileID: 4084567543164276334, guid: 4048729fce6cde142b8c090e3a0b2484, type: 3}
+      propertyPath: m_CastShadows
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4084567543164276334, guid: 4048729fce6cde142b8c090e3a0b2484, type: 3}
+      propertyPath: m_RayTracingMode
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4084567543164276334, guid: 4048729fce6cde142b8c090e3a0b2484, type: 3}
+      propertyPath: m_LightProbeUsage
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 4096971338813534281, guid: 4048729fce6cde142b8c090e3a0b2484, type: 3}
       propertyPath: m_LocalScale.x
       value: 3.3333335
@@ -8031,6 +9858,18 @@ PrefabInstance:
       propertyPath: m_Name
       value: PisoChunk (2)
       objectReference: {fileID: 0}
+    - target: {fileID: 9164688353420843835, guid: 6a38c3a6368864f45b1838b0085deca1, type: 3}
+      propertyPath: m_CastShadows
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 9164688353420843835, guid: 6a38c3a6368864f45b1838b0085deca1, type: 3}
+      propertyPath: m_RayTracingMode
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 9164688353420843835, guid: 6a38c3a6368864f45b1838b0085deca1, type: 3}
+      propertyPath: m_LightProbeUsage
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents:
     - {fileID: 7249148723506407128, guid: 6a38c3a6368864f45b1838b0085deca1, type: 3}
     m_RemovedGameObjects: []
@@ -8106,6 +9945,18 @@ PrefabInstance:
       propertyPath: m_Name
       value: PisoChunk (40)
       objectReference: {fileID: 0}
+    - target: {fileID: 9164688353420843835, guid: 6a38c3a6368864f45b1838b0085deca1, type: 3}
+      propertyPath: m_CastShadows
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 9164688353420843835, guid: 6a38c3a6368864f45b1838b0085deca1, type: 3}
+      propertyPath: m_RayTracingMode
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 9164688353420843835, guid: 6a38c3a6368864f45b1838b0085deca1, type: 3}
+      propertyPath: m_LightProbeUsage
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents:
     - {fileID: 7249148723506407128, guid: 6a38c3a6368864f45b1838b0085deca1, type: 3}
     m_RemovedGameObjects: []
@@ -8128,6 +9979,18 @@ PrefabInstance:
     - target: {fileID: 4747017376790098082, guid: cf6d0aa6b3dfee44181943e053ace696, type: 3}
       propertyPath: m_Name
       value: TreeD (19)
+      objectReference: {fileID: 0}
+    - target: {fileID: 6806206733719072129, guid: cf6d0aa6b3dfee44181943e053ace696, type: 3}
+      propertyPath: m_CastShadows
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6806206733719072129, guid: cf6d0aa6b3dfee44181943e053ace696, type: 3}
+      propertyPath: m_RayTracingMode
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6806206733719072129, guid: cf6d0aa6b3dfee44181943e053ace696, type: 3}
+      propertyPath: m_LightProbeUsage
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 8351040399874218464, guid: cf6d0aa6b3dfee44181943e053ace696, type: 3}
       propertyPath: m_LocalScale.x
@@ -8203,6 +10066,18 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 1828046551553915461}
     m_Modifications:
+    - target: {fileID: 4084567543164276334, guid: 4048729fce6cde142b8c090e3a0b2484, type: 3}
+      propertyPath: m_CastShadows
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4084567543164276334, guid: 4048729fce6cde142b8c090e3a0b2484, type: 3}
+      propertyPath: m_RayTracingMode
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4084567543164276334, guid: 4048729fce6cde142b8c090e3a0b2484, type: 3}
+      propertyPath: m_LightProbeUsage
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 4096971338813534281, guid: 4048729fce6cde142b8c090e3a0b2484, type: 3}
       propertyPath: m_LocalScale.x
       value: 3.3333335
@@ -8281,6 +10156,18 @@ PrefabInstance:
       propertyPath: m_Name
       value: TreeD (15)
       objectReference: {fileID: 0}
+    - target: {fileID: 6806206733719072129, guid: cf6d0aa6b3dfee44181943e053ace696, type: 3}
+      propertyPath: m_CastShadows
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6806206733719072129, guid: cf6d0aa6b3dfee44181943e053ace696, type: 3}
+      propertyPath: m_RayTracingMode
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6806206733719072129, guid: cf6d0aa6b3dfee44181943e053ace696, type: 3}
+      propertyPath: m_LightProbeUsage
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 8351040399874218464, guid: cf6d0aa6b3dfee44181943e053ace696, type: 3}
       propertyPath: m_LocalScale.x
       value: 1.6666667
@@ -8355,6 +10242,18 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 1828046551553915461}
     m_Modifications:
+    - target: {fileID: 4084567543164276334, guid: 4048729fce6cde142b8c090e3a0b2484, type: 3}
+      propertyPath: m_CastShadows
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4084567543164276334, guid: 4048729fce6cde142b8c090e3a0b2484, type: 3}
+      propertyPath: m_RayTracingMode
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4084567543164276334, guid: 4048729fce6cde142b8c090e3a0b2484, type: 3}
+      propertyPath: m_LightProbeUsage
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 4096971338813534281, guid: 4048729fce6cde142b8c090e3a0b2484, type: 3}
       propertyPath: m_LocalScale.x
       value: 3.3333335
@@ -8485,6 +10384,18 @@ PrefabInstance:
       propertyPath: m_Name
       value: PisoChunk (35)
       objectReference: {fileID: 0}
+    - target: {fileID: 9164688353420843835, guid: 6a38c3a6368864f45b1838b0085deca1, type: 3}
+      propertyPath: m_CastShadows
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 9164688353420843835, guid: 6a38c3a6368864f45b1838b0085deca1, type: 3}
+      propertyPath: m_RayTracingMode
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 9164688353420843835, guid: 6a38c3a6368864f45b1838b0085deca1, type: 3}
+      propertyPath: m_LightProbeUsage
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents:
     - {fileID: 7249148723506407128, guid: 6a38c3a6368864f45b1838b0085deca1, type: 3}
     m_RemovedGameObjects: []
@@ -8507,6 +10418,18 @@ PrefabInstance:
     - target: {fileID: 4747017376790098082, guid: cf6d0aa6b3dfee44181943e053ace696, type: 3}
       propertyPath: m_Name
       value: TreeD (22)
+      objectReference: {fileID: 0}
+    - target: {fileID: 6806206733719072129, guid: cf6d0aa6b3dfee44181943e053ace696, type: 3}
+      propertyPath: m_CastShadows
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6806206733719072129, guid: cf6d0aa6b3dfee44181943e053ace696, type: 3}
+      propertyPath: m_RayTracingMode
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6806206733719072129, guid: cf6d0aa6b3dfee44181943e053ace696, type: 3}
+      propertyPath: m_LightProbeUsage
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 8351040399874218464, guid: cf6d0aa6b3dfee44181943e053ace696, type: 3}
       propertyPath: m_LocalScale.x
@@ -8582,6 +10505,18 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 1828046551553915461}
     m_Modifications:
+    - target: {fileID: 169099813083006507, guid: 772828b5c18826a4384f3f1f28724c5e, type: 3}
+      propertyPath: m_CastShadows
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 169099813083006507, guid: 772828b5c18826a4384f3f1f28724c5e, type: 3}
+      propertyPath: m_RayTracingMode
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 169099813083006507, guid: 772828b5c18826a4384f3f1f28724c5e, type: 3}
+      propertyPath: m_LightProbeUsage
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 685960083290403141, guid: 772828b5c18826a4384f3f1f28724c5e, type: 3}
       propertyPath: m_Name
       value: Stone_Decorative_Pillar (6)

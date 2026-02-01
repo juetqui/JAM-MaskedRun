@@ -119,23 +119,23 @@ namespace ObjectPool
             if (isTriple)
                 SpawnTripleObstacle(groundPos);
             else
-                SpawnSingleObstacle(groundPos);
+                SpawnSingleObstacle(groundPos, PoolType.OneLineObstacle);
 
             return true;
         }
 
         private void SpawnTripleObstacle(Vector3 groundPos)
         {
-            var position = new Vector3(0, 0, groundPos.z); 
+            var position = new Vector3(3, 0, groundPos.z); 
             ObjectPool.Instance.SpawnFromPool(PoolType.FullLineObstacle, position, Quaternion.identity);
         }
 
-        private void SpawnSingleObstacle(Vector3 groundPos)
+        private void SpawnSingleObstacle(Vector3 groundPos, PoolType obstacleType)
         {
-            int[] xPos = { -3, 0, 3 };
+            int[] xPos = { 0, 3, 6 };
             var randomX = UnityEngine.Random.Range(xPos[0], xPos[2]);
             var position = new Vector3(randomX, 0, groundPos.z);
-            ObjectPool.Instance.SpawnFromPool(PoolType.OneLineObstacle, position, Quaternion.identity);
+            ObjectPool.Instance.SpawnFromPool(obstacleType, position, Quaternion.identity);
         }
     }
 }
