@@ -9,7 +9,7 @@ public class PlayerHealth : MonoBehaviour
     [SerializeField] private float invulnerabilitySeconds = 0.8f;
 
     [Header("Scenes")]
-    [SerializeField] private string defeatSceneName = "Defeat";
+    [SerializeField] private string defeatSceneName = "MainMenu";
 
     public int Lives { get; private set; }
     public bool IsDead { get; private set; }
