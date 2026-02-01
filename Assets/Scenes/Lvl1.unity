@@ -24,9 +24,9 @@ RenderSettings:
   m_AmbientEquatorColor: {r: 0.013349946, g: 0.3449626, b: 0.5660378, a: 1}
   m_AmbientGroundColor: {r: 0.23584908, g: 0.15723273, b: 0, a: 1}
   m_AmbientIntensity: 1
-  m_AmbientMode: 1
+  m_AmbientMode: 0
   m_SubtractiveShadowColor: {r: 0.42, g: 0.478, b: 0.627, a: 1}
-  m_SkyboxMaterial: {fileID: 0}
+  m_SkyboxMaterial: {fileID: 2100000, guid: 46c0b8c4291548b4cb6113787058582f, type: 2}
   m_HaloStrength: 0.5
   m_FlareStrength: 1
   m_FlareFadeSpeed: 3
@@ -148,6 +148,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 629538a42e51fa249a04a70995c838f0, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::EnvironmentChanger
+  forestMaterial: {fileID: 2100000, guid: 46c0b8c4291548b4cb6113787058582f, type: 2}
+  fireMaterial: {fileID: 2100000, guid: c92700e853e02d64598e575857808dcb, type: 2}
 --- !u!4 &142097691
 Transform:
   m_ObjectHideFlags: 0
