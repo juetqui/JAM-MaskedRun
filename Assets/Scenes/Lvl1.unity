@@ -918,6 +918,10 @@ PrefabInstance:
       propertyPath: playerHealth
       value: 
       objectReference: {fileID: 1069285700787182763}
+    - target: {fileID: 6780293060301755545, guid: f75399ba82b799944b84c9302b1d8adf, type: 3}
+      propertyPath: m_UiScaleMode
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 8501859027488828267, guid: f75399ba82b799944b84c9302b1d8adf, type: 3}
       propertyPath: m_Name
       value: Canvas
