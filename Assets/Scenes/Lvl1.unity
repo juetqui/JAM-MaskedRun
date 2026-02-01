@@ -837,6 +837,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 1397533771258135357, guid: f75399ba82b799944b84c9302b1d8adf, type: 3}
+      propertyPath: playerHealth
+      value: 
+      objectReference: {fileID: 1069285700787182763}
     - target: {fileID: 8501859027488828267, guid: f75399ba82b799944b84c9302b1d8adf, type: 3}
       propertyPath: m_Name
       value: Canvas
@@ -846,6 +850,65 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: f75399ba82b799944b84c9302b1d8adf, type: 3}
+--- !u!1 &1250509401
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1250509404}
+  - component: {fileID: 1250509403}
+  - component: {fileID: 1250509402}
+  m_Layer: 0
+  m_Name: GameManagers
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &1250509402
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1250509401}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0604fe993e4cc70489c83041ea1c2ae8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::ScoreManager
+  pointsPerSecond: 10
+  multiplier: 1
+--- !u!114 &1250509403
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1250509401}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1edf6838770a58f4bb2a07b79726d0cb, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::GameTimeManager
+--- !u!4 &1250509404
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1250509401}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -9.67869, y: -0, z: 39.68515}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1464997500
 GameObject:
   m_ObjectHideFlags: 0
@@ -925,6 +988,11 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &1760557421 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 2285834401518563248, guid: bab7bbd45d1a8bc419e97d5d1d7b3e54, type: 3}
+  m_PrefabInstance: {fileID: 1069285700787182761}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &2130906178
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1045,13 +1113,31 @@ PrefabInstance:
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 2285834401518563248, guid: bab7bbd45d1a8bc419e97d5d1d7b3e54, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1069285700787182763}
   m_SourcePrefab: {fileID: 100100000, guid: bab7bbd45d1a8bc419e97d5d1d7b3e54, type: 3}
 --- !u!4 &1069285700787182762 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 3970548773249302643, guid: bab7bbd45d1a8bc419e97d5d1d7b3e54, type: 3}
   m_PrefabInstance: {fileID: 1069285700787182761}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &1069285700787182763
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1760557421}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9072f672af82f6040bd0b2910d4444b9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::PlayerHealth
+  maxLives: 3
+  invulnerabilitySeconds: 0.8
+  defeatSceneName: MainMenu
 --- !u!1001 &5041492835363382923
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1159,3 +1245,4 @@ SceneRoots:
   - {fileID: 2130906178}
   - {fileID: 887164044}
   - {fileID: 1464997503}
+  - {fileID: 1250509404}
