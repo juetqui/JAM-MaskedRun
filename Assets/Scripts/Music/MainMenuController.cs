@@ -23,6 +23,7 @@ public class MainMenuController : MonoBehaviour
 
     public void Run()
     {
+        Debug.Log(Time.timeScale);
         if (isLoading) return;
         isLoading = true;
         StartCoroutine(RunRoutine());
@@ -53,7 +54,7 @@ public class MainMenuController : MonoBehaviour
             isLoading = false;
             yield break;
         }
-
+        Time.timeScale = 1f;
         SceneManager.LoadScene(next);
         // La música de la nueva escena arranca sola en AudioManager.OnSceneLoaded()
     }

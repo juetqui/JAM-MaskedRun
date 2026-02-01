@@ -214,7 +214,10 @@ public class PauseMenuController : MonoBehaviour
     {
         IsPaused = false;
 
-        if (useTimeScalePause) Time.timeScale = 1f;
+        if (useTimeScalePause) 
+        { 
+            Time.timeScale = 1f; 
+        }
         if (pauseAllAudio) AudioListener.pause = false;
 
         if (manageCursor)
