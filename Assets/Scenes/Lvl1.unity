@@ -1876,6 +1876,14 @@ PrefabInstance:
       value: 6
       objectReference: {fileID: 0}
     - target: {fileID: 140481685777295250, guid: e587afe6ef8d2bb41bb43ffe8eca6240, type: 3}
+      propertyPath: pools.Array.data[3].prefab
+      value: 
+      objectReference: {fileID: 2698793748229734158, guid: bc3248c2fe9ab80459a32c113c20a9a1, type: 3}
+    - target: {fileID: 140481685777295250, guid: e587afe6ef8d2bb41bb43ffe8eca6240, type: 3}
+      propertyPath: pools.Array.data[4].prefab
+      value: 
+      objectReference: {fileID: 4176784657363694235, guid: 2fe302b1d7eaf414b91bf34e19138c9a, type: 3}
+    - target: {fileID: 140481685777295250, guid: e587afe6ef8d2bb41bb43ffe8eca6240, type: 3}
       propertyPath: pools.Array.data[5].prefab
       value: 
       objectReference: {fileID: 5176862680672773228, guid: 7f0b8c39fabbebb4393a482b02ffea37, type: 3}
