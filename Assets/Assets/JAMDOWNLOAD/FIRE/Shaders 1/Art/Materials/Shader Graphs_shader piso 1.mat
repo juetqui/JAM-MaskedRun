@@ -1,0 +1,112 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!21 &2100000
+Material:
+  serializedVersion: 8
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name: Shader Graphs_shader piso 1
+  m_Shader: {fileID: -6465566751694194690, guid: bdbd0a19b04a25b418f793ac5a72b277, type: 3}
+  m_Parent: {fileID: 0}
+  m_ModifiedSerializedProperties: 0
+  m_ValidKeywords: []
+  m_InvalidKeywords:
+  - _EMISSION
+  m_LightmapFlags: 2
+  m_EnableInstancingVariants: 0
+  m_DoubleSidedGI: 0
+  m_CustomRenderQueue: -1
+  stringTagMap: {}
+  disabledShaderPasses:
+  - MOTIONVECTORS
+  m_LockedProperties: 
+  m_SavedProperties:
+    serializedVersion: 3
+    m_TexEnvs:
+    - _GroundTexture:
+        m_Texture: {fileID: 2800000, guid: 9fa652159d81ed549a0f66dd0abd2cce, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _Lava_bc2b8f2486f249c2b8150a45e0bc92ad_Noise_479202323_Texture2D:
+        m_Texture: {fileID: 2800000, guid: 20b827e3aa40da94db11465b3302ee48, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _MagmaNormal:
+        m_Texture: {fileID: 2800000, guid: 23753a6b7d568c7459873ceeea63c73e, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _Noise:
+        m_Texture: {fileID: 2800000, guid: 20b827e3aa40da94db11465b3302ee48, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _Texture:
+        m_Texture: {fileID: 2800000, guid: 9fa652159d81ed549a0f66dd0abd2cce, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _Texture2D:
+        m_Texture: {fileID: 2800000, guid: 23753a6b7d568c7459873ceeea63c73e, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _Texture2DAsset_7193c8c5c18541a6bb157dcc55532ed5_Out_0_Texture2D:
+        m_Texture: {fileID: 2800000, guid: 20b827e3aa40da94db11465b3302ee48, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _mainTex:
+        m_Texture: {fileID: 2800000, guid: 9fa652159d81ed549a0f66dd0abd2cce, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _normal_texture:
+        m_Texture: {fileID: 2800000, guid: 19f1d8d53abb63d4a8698a27edabc1cb, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - unity_Lightmaps:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - unity_LightmapsInd:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - unity_ShadowMasks:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    m_Ints: []
+    m_Floats:
+    - _Float: 0
+    - _Float_1: 0
+    - _FloorSize: 0.1
+    - _Intensity: 0.93
+    - _LavaQuantity: 0.13
+    - _QueueControl: 0
+    - _QueueOffset: 0
+    - _Scale: -195.43
+    - _Sin_Velocity: 1
+    - _TwirlStrength: 0.1
+    - _VoronoiScale: 5
+    - _VoronoiSpeed: 0.3
+    - _Voronoi_Qty: 2.71
+    - _Voronoi_Speed: 0.57
+    m_Colors:
+    - _EmissiveColor: {r: 0.7490196, g: 0.09803922, b: 0.011764706, a: 1}
+    - _LavaFluctuation: {r: 0.8, g: 1, b: 0, a: 0}
+    - _LavaOffset: {r: 0.3, g: 0, b: 0, a: 0}
+    - _MagmaOfsset: {r: 0.1, g: 0, b: 0, a: 0}
+    - _tilling: {r: 1, g: 1, b: 0, a: 0}
+  m_BuildTextureStacks: []
+  m_AllowLocking: 1
+--- !u!114 &8258870214564336545
+MonoBehaviour:
+  m_ObjectHideFlags: 11
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d0353a89b1f911e48b9e16bdc9f2e058, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  version: 10
