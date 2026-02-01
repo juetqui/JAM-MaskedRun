@@ -32,6 +32,15 @@
                     "processors": "",
                     "interactions": "",
                     "initialStateCheck": false
+                },
+                {
+                    "name": "ChangeEnv",
+                    "type": "Button",
+                    "id": "b6499305-a0e4-4ebf-a93b-8a210e868623",
+                    "expectedControlType": "",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": false
                 }
             ],
             "bindings": [
@@ -131,12 +140,17 @@
                     "processors": "",
                     "groups": "",
                     "action": "Jump",
-                    "id": "086050e2-f77d-49db-9e01-aea1472851af",
-                    "path": "<Keyboard>/escape",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "26a923ba-8a8f-431d-85ef-a315ce6e8d36",
+                    "path": "<Mouse>/leftButton",
                     "interactions": "",
                     "processors": "",
                     "groups": "",
-                    "action": "Pause",
+                    "action": "ChangeEnv",
                     "isComposite": false,
                     "isPartOfComposite": false
                 }

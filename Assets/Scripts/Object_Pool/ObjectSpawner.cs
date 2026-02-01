@@ -19,7 +19,16 @@ namespace ObjectPool
         [SerializeField, Range(0f, 100f)] private float tripleObstacleChance = 20f;
         [SerializeField] private int minEmptySpaces = 2;
         
+        [Header("Environment Settings")]
+        [SerializeField] private float environmentTrackLength = 20f;
+        [SerializeField] private float environmentLength = 15f;
+        [SerializeField] private float environmentLeftOffset = 0f;
+        [SerializeField] private float environmentRightOffset = 9f;
+        
         private Transform _lastSpawnedGround;
+        private Transform _lastSpawnedEnvLeft; 
+        private Transform _lastSpawnedEnvRight;
+        
         private int _currentEmptySpaces = 0;
 
         private void Awake()
@@ -28,6 +37,8 @@ namespace ObjectPool
                 Instance = this;
             
             _lastSpawnedGround = transform;
+            _lastSpawnedEnvLeft = transform;
+            _lastSpawnedEnvRight = transform;
         }
 
         private void Start()
@@ -39,6 +50,12 @@ namespace ObjectPool
         {
             if (_lastSpawnedGround.position.z < targetTrackLength + lengthMargin)
                 SpawnGround();
+            
+            if (_lastSpawnedEnvLeft.position.z < environmentTrackLength + lengthMargin)
+                SpawnEnvironment(true);
+
+            if (_lastSpawnedEnvRight.position.z < environmentTrackLength + lengthMargin)
+                SpawnEnvironment(false);
         }
 
         private void InitializeTrack()
@@ -46,6 +63,16 @@ namespace ObjectPool
             while (_lastSpawnedGround.position.z < targetTrackLength)
             {
                 SpawnGround();
+            }
+            
+            while (_lastSpawnedEnvLeft.position.z < environmentTrackLength)
+            {
+                SpawnEnvironment(true);
+            }
+
+            while (_lastSpawnedEnvRight.position.z < environmentTrackLength)
+            {
+                SpawnEnvironment(false);
             }
         }
 
@@ -65,6 +92,21 @@ namespace ObjectPool
             
             if (TrySpawnObstacle(position))
                 _currentEmptySpaces = 0;
+        }
+
+        private void SpawnEnvironment(bool isLeft)
+        {
+            var lastEnv = isLeft ? _lastSpawnedEnvLeft : _lastSpawnedEnvRight;
+            var type = isLeft ? PoolType.EnvironmentLeft : PoolType.EnvironmentRight;
+            var xPos = isLeft ? environmentLeftOffset : environmentRightOffset;
+            var position = new Vector3(xPos, 0, lastEnv.position.z + environmentLength);
+        
+            var envObj = ObjectPool.Instance.SpawnFromPool(type, position, Quaternion.identity);
+
+            if (envObj == null) return;
+            
+            if (isLeft) _lastSpawnedEnvLeft = envObj.transform;
+            else _lastSpawnedEnvRight = envObj.transform;
         }
 
         private bool TrySpawnObstacle(Vector3 groundPos)

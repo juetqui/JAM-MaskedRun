@@ -68,5 +68,7 @@ namespace ObjectPool
         Ground,
         OneLineObstacle,
         FullLineObstacle,
+        EnvironmentLeft,
+        EnvironmentRight
     }
 }
