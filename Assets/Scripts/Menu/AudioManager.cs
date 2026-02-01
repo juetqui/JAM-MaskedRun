@@ -2,13 +2,14 @@
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
+[DisallowMultipleComponent]
 public class AudioManager : MonoBehaviour
 {
     public static AudioManager Instance { get; private set; }
 
-    [Header("Sources")]
-    [SerializeField] private AudioSource musicSource;
-    [SerializeField] private AudioSource sfxSource;
+    [Header("Audio Sources (2D)")]
+    [SerializeField] private AudioSource musicSource; // loop
+    [SerializeField] private AudioSource sfxSource;   // one-shots
 
     [Header("Music Clips")]
     [SerializeField] private AudioClip menuMusic;
@@ -18,10 +19,23 @@ public class AudioManager : MonoBehaviour
     [SerializeField] private AudioClip transitionBell;
 
     [Header("Volumes")]
-    [SerializeField, Range(0f, 1f)] private float musicVolume = 0.6f;
+    [SerializeField, Range(0f, 1f)] private float musicVolume = 0.65f;
     [SerializeField, Range(0f, 1f)] private float sfxVolume = 1.0f;
 
-    Coroutine musicFadeRoutine;
+    [Header("Fade Defaults")]
+    [SerializeField] private float defaultMusicFadeIn = 0.8f;
+    [SerializeField] private float defaultMusicFadeOut = 0.4f;
+
+    [Header("SFX Anti-Spam")]
+    [Tooltip("Evita que el mismo SFX se dispare demasiadas veces por segundo.")]
+    [SerializeField] private float sfxCooldown = 0.06f;
+
+    private Coroutine musicFadeRoutine;
+    private float lastSfxTime = -999f;
+
+    // -------------------------
+    // Lifecycle
+    // -------------------------
 
     private void Awake()
     {
@@ -34,108 +48,196 @@ public class AudioManager : MonoBehaviour
         Instance = this;
         DontDestroyOnLoad(gameObject);
 
-        // Auto-wire si no se asignó
-        if (!musicSource || !sfxSource)
-        {
-            var sources = GetComponents<AudioSource>();
-            if (sources.Length >= 2)
-            {
-                if (!musicSource) musicSource = sources[0];
-                if (!sfxSource) sfxSource = sources[1];
-            }
-        }
-
-        if (!musicSource || !sfxSource)
-        {
-            Debug.LogError("AudioManager: Need 2 AudioSources (music + sfx).");
-            enabled = false;
-            return;
-        }
-
-        // Config base
-        musicSource.loop = true;
-        musicSource.playOnAwake = false;
-        musicSource.spatialBlend = 0f;
-
-        sfxSource.loop = false;
-        sfxSource.playOnAwake = false;
-        sfxSource.spatialBlend = 0f;
-
-        musicSource.volume = musicVolume;
-        sfxSource.volume = sfxVolume;
+        AutoWireSourcesIfNeeded();
+        ConfigureSources();
 
         SceneManager.sceneLoaded += OnSceneLoaded;
     }
 
     private void OnDestroy()
     {
+        // Evita leaks de eventos si el objeto se destruye por alguna razón
         if (Instance == this)
             SceneManager.sceneLoaded -= OnSceneLoaded;
     }
 
     private void Start()
     {
-        // Al iniciar en menú
-        PlayMusic(menuMusic, fadeInSeconds: 0.5f);
+        // Arranque según escena actual (por si no es index 0)
+        OnSceneLoaded(SceneManager.GetActiveScene(), LoadSceneMode.Single);
     }
+
+    // -------------------------
+    // Setup Helpers
+    // -------------------------
+
+    private void AutoWireSourcesIfNeeded()
+    {
+        // Si no asignaste en Inspector, intenta tomar 2 AudioSources del mismo GO.
+        if (musicSource != null && sfxSource != null)
+            return;
+
+        var sources = GetComponents<AudioSource>();
+        if (sources.Length >= 2)
+        {
+            if (!musicSource) musicSource = sources[0];
+            if (!sfxSource) sfxSource = sources[1];
+        }
+    }
+
+    private void ConfigureSources()
+    {
+        if (!musicSource || !sfxSource)
+        {
+            Debug.LogError("AudioManager: Necesitas 2 AudioSources asignados (musicSource y sfxSource).");
+            enabled = false;
+            return;
+        }
+
+        // Music source
+        musicSource.loop = true;
+        musicSource.playOnAwake = false;
+        musicSource.spatialBlend = 0f; // 2D
+        musicSource.volume = musicVolume;
+
+        // SFX source
+        sfxSource.loop = false;
+        sfxSource.playOnAwake = false;
+        sfxSource.spatialBlend = 0f; // 2D
+        sfxSource.volume = sfxVolume;
+    }
+
+    // -------------------------
+    // Scene Hook
+    // -------------------------
 
     private void OnSceneLoaded(Scene scene, LoadSceneMode mode)
     {
-        // Regla simple por BuildIndex:
-        // index 0 = menú → menuMusic
-        // index >=1 = juego → gameMusic
+        // Regla actual:
+        // - buildIndex 0 => menú
+        // - buildIndex >= 1 => juego
         if (scene.buildIndex == 0)
         {
-            PlayMusic(menuMusic, fadeInSeconds: 0.5f);
+            if (menuMusic != null)
+                PlayMusic(menuMusic, defaultMusicFadeIn);
         }
         else
         {
-            PlayMusic(gameMusic, fadeInSeconds: 0.8f);
+            if (gameMusic != null)
+                PlayMusic(gameMusic, defaultMusicFadeIn);
         }
     }
 
-    public void PlayTransitionBell()
-    {
-        if (transitionBell)
-            sfxSource.PlayOneShot(transitionBell, sfxVolume);
-    }
+    // -------------------------
+    // Public API - Music
+    // -------------------------
 
+    /// <summary>
+    /// Reproduce música (si es distinta a la actual). Aplica fade-in opcional.
+    /// </summary>
     public void PlayMusic(AudioClip clip, float fadeInSeconds = 0f)
     {
-        if (!clip) return;
+        if (!clip || !musicSource) return;
 
-        if (musicSource.clip == clip && musicSource.isPlaying)
+        // Si ya está sonando este clip, no hagas nada.
+        if (musicSource.isPlaying && musicSource.clip == clip)
             return;
 
-        if (musicFadeRoutine != null) StopCoroutine(musicFadeRoutine);
-
+        // Cambia clip
         musicSource.clip = clip;
-        musicSource.volume = 0f;
-        musicSource.Play();
 
-        if (fadeInSeconds <= 0f)
+        // Arranca desde 0 para un fade limpio
+        if (fadeInSeconds > 0f)
         {
-            musicSource.volume = musicVolume;
+            musicSource.volume = 0f;
+            musicSource.Play();
+            FadeMusicTo(musicVolume, fadeInSeconds, stopAfter: false);
         }
         else
         {
-            musicFadeRoutine = StartCoroutine(FadeMusicTo(musicVolume, fadeInSeconds));
+            musicSource.volume = musicVolume;
+            musicSource.Play();
         }
     }
 
-    public void FadeOutMusic(float fadeOutSeconds)
+    /// <summary>
+    /// Fade out de la música actual y la detiene al final.
+    /// </summary>
+    public void FadeOutMusic(float fadeOutSeconds = -1f)
     {
-        if (musicFadeRoutine != null) StopCoroutine(musicFadeRoutine);
-        musicFadeRoutine = StartCoroutine(FadeMusicTo(0f, fadeOutSeconds, stopAfter: true));
+        if (!musicSource || !musicSource.isPlaying) return;
+
+        if (fadeOutSeconds < 0f) fadeOutSeconds = defaultMusicFadeOut;
+        FadeMusicTo(0f, fadeOutSeconds, stopAfter: true);
     }
 
-    private IEnumerator FadeMusicTo(float target, float seconds, bool stopAfter = false)
+    /// <summary>
+    /// Ajusta volumen objetivo de música (se aplica instantáneo al source).
+    /// </summary>
+    public void SetMusicVolume(float volume01)
     {
-        float start = musicSource.volume;
+        musicVolume = Mathf.Clamp01(volume01);
+        if (musicSource) musicSource.volume = musicVolume;
+    }
+
+    /// <summary>
+    /// Ajusta volumen de SFX (para PlayOneShot).
+    /// </summary>
+    public void SetSfxVolume(float volume01)
+    {
+        sfxVolume = Mathf.Clamp01(volume01);
+        if (sfxSource) sfxSource.volume = sfxVolume;
+    }
+
+    // -------------------------
+    // Public API - SFX
+    // -------------------------
+
+    /// <summary>
+    /// Reproduce la campana de transición (one-shot). Tiene cooldown anti-spam.
+    /// </summary>
+    public void PlayTransitionBell()
+    {
+        PlaySfx(transitionBell);
+    }
+
+    /// <summary>
+    /// Reproduce cualquier SFX (one-shot). Tiene cooldown anti-spam.
+    /// </summary>
+    public void PlaySfx(AudioClip clip)
+    {
+        if (!clip || !sfxSource) return;
+
+        float now = Time.unscaledTime;
+        if (now - lastSfxTime < sfxCooldown) return;
+
+        sfxSource.PlayOneShot(clip, sfxVolume);
+        lastSfxTime = now;
+    }
+
+    // -------------------------
+    // Internals - Fades
+    // -------------------------
+
+    private void FadeMusicTo(float targetVolume, float seconds, bool stopAfter)
+    {
+        if (!musicSource) return;
+
+        if (musicFadeRoutine != null)
+            StopCoroutine(musicFadeRoutine);
+
+        musicFadeRoutine = StartCoroutine(FadeMusicRoutine(targetVolume, seconds, stopAfter));
+    }
+
+    private IEnumerator FadeMusicRoutine(float targetVolume, float seconds, bool stopAfter)
+    {
+        float startVolume = musicSource.volume;
+
         if (seconds <= 0f)
         {
-            musicSource.volume = target;
-            if (stopAfter && Mathf.Approximately(target, 0f)) musicSource.Stop();
+            musicSource.volume = targetVolume;
+            if (stopAfter && Mathf.Approximately(targetVolume, 0f))
+                musicSource.Stop();
             yield break;
         }
 
@@ -144,11 +246,13 @@ public class AudioManager : MonoBehaviour
         {
             t += Time.unscaledDeltaTime;
             float a = Mathf.Clamp01(t / seconds);
-            musicSource.volume = Mathf.Lerp(start, target, a);
+            musicSource.volume = Mathf.Lerp(startVolume, targetVolume, a);
             yield return null;
         }
 
-        musicSource.volume = target;
-        if (stopAfter && Mathf.Approximately(target, 0f)) musicSource.Stop();
+        musicSource.volume = targetVolume;
+
+        if (stopAfter && Mathf.Approximately(targetVolume, 0f))
+            musicSource.Stop();
     }
 }
