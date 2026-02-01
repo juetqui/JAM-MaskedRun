@@ -47,7 +47,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::MovementComponent
   _type: 1
   _speed: 10
-  _newSpawnDist: -1
   _despawnDist: -10
 --- !u!1 &2983451932771248285
 GameObject:
@@ -155,7 +154,7 @@ BoxCollider:
     serializedVersion: 2
     m_Bits: 0
   m_LayerOverridePriority: 0
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 3
