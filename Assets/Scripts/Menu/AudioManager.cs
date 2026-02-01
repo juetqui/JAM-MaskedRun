@@ -8,13 +8,13 @@ public class AudioManager : MonoBehaviour
     public static AudioManager Instance { get; private set; }
 
     [Header("Audio Source (2D)")]
-    [SerializeField] private AudioSource musicSource; // loop
+    [SerializeField] private AudioSource musicSource;
 
     [Header("Music Clips")]
     [SerializeField] private AudioClip menuMusic;
     [SerializeField] private AudioClip gameMusic;
 
-    [Header("Volumes")]
+    [Header("Volume")]
     [SerializeField, Range(0f, 1f)] private float musicVolume = 0.65f;
 
     [Header("Fade Defaults")]
@@ -23,27 +23,26 @@ public class AudioManager : MonoBehaviour
 
     private Coroutine musicFadeRoutine;
 
-    // -------------------------
-    // Lifecycle
-    // -------------------------
-
     private void Awake()
     {
-        // Singleton persistente
+        var root = transform.root.gameObject;
+
+        // Si ya existe un AudioManager, destruir el root nuevo completo
         if (Instance != null && Instance != this)
         {
-            Destroy(gameObject);
+            Destroy(root);
             return;
         }
 
         Instance = this;
-        DontDestroyOnLoad(gameObject);
+        DontDestroyOnLoad(root);
 
         AutoWireSourceIfNeeded();
         ConfigureSource();
 
         SceneManager.sceneLoaded += OnSceneLoaded;
     }
+
 
     private void OnDestroy()
     {
@@ -53,19 +52,13 @@ public class AudioManager : MonoBehaviour
 
     private void Start()
     {
-        // Arranque según escena actual (por si no es index 0)
+        // Arranque según escena actual
         OnSceneLoaded(SceneManager.GetActiveScene(), LoadSceneMode.Single);
     }
-
-    // -------------------------
-    // Setup Helpers
-    // -------------------------
 
     private void AutoWireSourceIfNeeded()
     {
         if (musicSource != null) return;
-
-        // Intenta tomar el primer AudioSource del mismo GO.
         musicSource = GetComponent<AudioSource>();
     }
 
@@ -84,10 +77,6 @@ public class AudioManager : MonoBehaviour
         musicSource.volume = musicVolume;
     }
 
-    // -------------------------
-    // Scene Hook
-    // -------------------------
-
     private void OnSceneLoaded(Scene scene, LoadSceneMode mode)
     {
         // Regla:
@@ -105,25 +94,15 @@ public class AudioManager : MonoBehaviour
         }
     }
 
-    // -------------------------
-    // Public API - Music
-    // -------------------------
-
-    /// <summary>
-    /// Reproduce música (si es distinta a la actual). Aplica fade-in opcional.
-    /// </summary>
     public void PlayMusic(AudioClip clip, float fadeInSeconds = 0f)
     {
         if (!clip || !musicSource) return;
 
-        // Si ya está sonando este clip, no hagas nada.
         if (musicSource.isPlaying && musicSource.clip == clip)
             return;
 
-        // Cambia clip
         musicSource.clip = clip;
 
-        // Arranca desde 0 para un fade limpio
         if (fadeInSeconds > 0f)
         {
             musicSource.volume = 0f;
@@ -137,9 +116,6 @@ public class AudioManager : MonoBehaviour
         }
     }
 
-    /// <summary>
-    /// Fade out de la música actual y la detiene al final.
-    /// </summary>
     public void FadeOutMusic(float fadeOutSeconds = -1f)
     {
         if (!musicSource || !musicSource.isPlaying) return;
@@ -148,18 +124,11 @@ public class AudioManager : MonoBehaviour
         FadeMusicTo(0f, fadeOutSeconds, stopAfter: true);
     }
 
-    /// <summary>
-    /// Ajusta volumen objetivo de música (se aplica instantáneo al source).
-    /// </summary>
     public void SetMusicVolume(float volume01)
     {
         musicVolume = Mathf.Clamp01(volume01);
         if (musicSource) musicSource.volume = musicVolume;
     }
-
-    // -------------------------
-    // Internals - Fades
-    // -------------------------
 
     private void FadeMusicTo(float targetVolume, float seconds, bool stopAfter)
     {
