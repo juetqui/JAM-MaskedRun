@@ -7,31 +7,21 @@ public class AudioManager : MonoBehaviour
 {
     public static AudioManager Instance { get; private set; }
 
-    [Header("Audio Sources (2D)")]
+    [Header("Audio Source (2D)")]
     [SerializeField] private AudioSource musicSource; // loop
-    [SerializeField] private AudioSource sfxSource;   // one-shots
 
     [Header("Music Clips")]
     [SerializeField] private AudioClip menuMusic;
     [SerializeField] private AudioClip gameMusic;
 
-    [Header("Transition SFX")]
-    [SerializeField] private AudioClip transitionBell;
-
     [Header("Volumes")]
     [SerializeField, Range(0f, 1f)] private float musicVolume = 0.65f;
-    [SerializeField, Range(0f, 1f)] private float sfxVolume = 1.0f;
 
     [Header("Fade Defaults")]
     [SerializeField] private float defaultMusicFadeIn = 0.8f;
     [SerializeField] private float defaultMusicFadeOut = 0.4f;
 
-    [Header("SFX Anti-Spam")]
-    [Tooltip("Evita que el mismo SFX se dispare demasiadas veces por segundo.")]
-    [SerializeField] private float sfxCooldown = 0.06f;
-
     private Coroutine musicFadeRoutine;
-    private float lastSfxTime = -999f;
 
     // -------------------------
     // Lifecycle
@@ -45,18 +35,18 @@ public class AudioManager : MonoBehaviour
             Destroy(gameObject);
             return;
         }
+
         Instance = this;
         DontDestroyOnLoad(gameObject);
 
-        AutoWireSourcesIfNeeded();
-        ConfigureSources();
+        AutoWireSourceIfNeeded();
+        ConfigureSource();
 
         SceneManager.sceneLoaded += OnSceneLoaded;
     }
 
     private void OnDestroy()
     {
-        // Evita leaks de eventos si el objeto se destruye por alguna razón
         if (Instance == this)
             SceneManager.sceneLoaded -= OnSceneLoaded;
     }
@@ -71,40 +61,27 @@ public class AudioManager : MonoBehaviour
     // Setup Helpers
     // -------------------------
 
-    private void AutoWireSourcesIfNeeded()
+    private void AutoWireSourceIfNeeded()
     {
-        // Si no asignaste en Inspector, intenta tomar 2 AudioSources del mismo GO.
-        if (musicSource != null && sfxSource != null)
-            return;
+        if (musicSource != null) return;
 
-        var sources = GetComponents<AudioSource>();
-        if (sources.Length >= 2)
-        {
-            if (!musicSource) musicSource = sources[0];
-            if (!sfxSource) sfxSource = sources[1];
-        }
+        // Intenta tomar el primer AudioSource del mismo GO.
+        musicSource = GetComponent<AudioSource>();
     }
 
-    private void ConfigureSources()
+    private void ConfigureSource()
     {
-        if (!musicSource || !sfxSource)
+        if (!musicSource)
         {
-            Debug.LogError("AudioManager: Necesitas 2 AudioSources asignados (musicSource y sfxSource).");
+            Debug.LogError("AudioManager: Necesitas asignar un AudioSource a musicSource.");
             enabled = false;
             return;
         }
 
-        // Music source
         musicSource.loop = true;
         musicSource.playOnAwake = false;
         musicSource.spatialBlend = 0f; // 2D
         musicSource.volume = musicVolume;
-
-        // SFX source
-        sfxSource.loop = false;
-        sfxSource.playOnAwake = false;
-        sfxSource.spatialBlend = 0f; // 2D
-        sfxSource.volume = sfxVolume;
     }
 
     // -------------------------
@@ -113,7 +90,7 @@ public class AudioManager : MonoBehaviour
 
     private void OnSceneLoaded(Scene scene, LoadSceneMode mode)
     {
-        // Regla actual:
+        // Regla:
         // - buildIndex 0 => menú
         // - buildIndex >= 1 => juego
         if (scene.buildIndex == 0)
@@ -178,41 +155,6 @@ public class AudioManager : MonoBehaviour
     {
         musicVolume = Mathf.Clamp01(volume01);
         if (musicSource) musicSource.volume = musicVolume;
-    }
-
-    /// <summary>
-    /// Ajusta volumen de SFX (para PlayOneShot).
-    /// </summary>
-    public void SetSfxVolume(float volume01)
-    {
-        sfxVolume = Mathf.Clamp01(volume01);
-        if (sfxSource) sfxSource.volume = sfxVolume;
-    }
-
-    // -------------------------
-    // Public API - SFX
-    // -------------------------
-
-    /// <summary>
-    /// Reproduce la campana de transición (one-shot). Tiene cooldown anti-spam.
-    /// </summary>
-    public void PlayTransitionBell()
-    {
-        PlaySfx(transitionBell);
-    }
-
-    /// <summary>
-    /// Reproduce cualquier SFX (one-shot). Tiene cooldown anti-spam.
-    /// </summary>
-    public void PlaySfx(AudioClip clip)
-    {
-        if (!clip || !sfxSource) return;
-
-        float now = Time.unscaledTime;
-        if (now - lastSfxTime < sfxCooldown) return;
-
-        sfxSource.PlayOneShot(clip, sfxVolume);
-        lastSfxTime = now;
     }
 
     // -------------------------
