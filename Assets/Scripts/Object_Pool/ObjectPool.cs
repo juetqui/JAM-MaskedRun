@@ -67,6 +67,8 @@ namespace ObjectPool
     {
         Ground,
         OneLineObstacle,
+        FullColumnObstacle,
+        FullMovableColumnObstacle,
         FullLineObstacle,
         EnvironmentLeft,
         EnvironmentRight

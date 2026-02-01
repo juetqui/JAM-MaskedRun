@@ -7,7 +7,7 @@ public class MainMenuController : MonoBehaviour
     [Header("Transition")]
     [SerializeField] private SceneFader sceneFader;
     [SerializeField] private float fadeOutSeconds = 0.6f;
-    [SerializeField] private float waitAfterBellSeconds = 1.2f; // tiempo para que suene la campana
+    [SerializeField] private float waitSeconds = 0.6f;
 
     [Header("Music")]
     [SerializeField] private bool fadeOutMenuMusic = true;
@@ -30,24 +30,19 @@ public class MainMenuController : MonoBehaviour
 
     private IEnumerator RunRoutine()
     {
-        // 1) Fade out visual
+        // 1) Fade a negro
         if (sceneFader != null)
             yield return sceneFader.Fade(0f, 1f, fadeOutSeconds);
 
-        // 2) Música del menú a 0 (opcional) + campana
-        if (AudioManager.Instance != null)
-        {
-            if (fadeOutMenuMusic)
-                AudioManager.Instance.FadeOutMusic(musicFadeOutSeconds);
+        // 2) Fade out de la música del menú (opcional)
+        if (fadeOutMenuMusic && AudioManager.Instance != null)
+            AudioManager.Instance.FadeOutMusic(musicFadeOutSeconds);
 
-            AudioManager.Instance.PlayTransitionBell();
-        }
+        // 3) Espera (si querés un pequeño "beat" antes de cargar)
+        if (waitSeconds > 0f)
+            yield return new WaitForSecondsRealtime(waitSeconds);
 
-        // 3) Espera mientras suena la campana
-        if (waitAfterBellSeconds > 0f)
-            yield return new WaitForSecondsRealtime(waitAfterBellSeconds);
-
-        // 4) Carga por Build Index (siguiente escena)
+        // 4) Cargar siguiente escena por Build Index
         int current = SceneManager.GetActiveScene().buildIndex;
         int next = current + 1;
 
@@ -60,6 +55,6 @@ public class MainMenuController : MonoBehaviour
         }
 
         SceneManager.LoadScene(next);
-        // La música de la nueva escena arranca desde AudioManager.OnSceneLoaded
+        // La música de la nueva escena arranca sola en AudioManager.OnSceneLoaded()
     }
 }
