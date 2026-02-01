@@ -884,6 +884,42 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 140481685777295250, guid: e587afe6ef8d2bb41bb43ffe8eca6240, type: 3}
+      propertyPath: pools.Array.size
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 140481685777295250, guid: e587afe6ef8d2bb41bb43ffe8eca6240, type: 3}
+      propertyPath: pools.Array.data[3].type
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 140481685777295250, guid: e587afe6ef8d2bb41bb43ffe8eca6240, type: 3}
+      propertyPath: pools.Array.data[4].type
+      value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 140481685777295250, guid: e587afe6ef8d2bb41bb43ffe8eca6240, type: 3}
+      propertyPath: pools.Array.data[5].size
+      value: 100
+      objectReference: {fileID: 0}
+    - target: {fileID: 140481685777295250, guid: e587afe6ef8d2bb41bb43ffe8eca6240, type: 3}
+      propertyPath: pools.Array.data[5].type
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 140481685777295250, guid: e587afe6ef8d2bb41bb43ffe8eca6240, type: 3}
+      propertyPath: pools.Array.data[6].size
+      value: 100
+      objectReference: {fileID: 0}
+    - target: {fileID: 140481685777295250, guid: e587afe6ef8d2bb41bb43ffe8eca6240, type: 3}
+      propertyPath: pools.Array.data[6].type
+      value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 140481685777295250, guid: e587afe6ef8d2bb41bb43ffe8eca6240, type: 3}
+      propertyPath: pools.Array.data[5].prefab
+      value: 
+      objectReference: {fileID: 5176862680672773228, guid: 7f0b8c39fabbebb4393a482b02ffea37, type: 3}
+    - target: {fileID: 140481685777295250, guid: e587afe6ef8d2bb41bb43ffe8eca6240, type: 3}
+      propertyPath: pools.Array.data[6].prefab
+      value: 
+      objectReference: {fileID: 4912352543779205079, guid: 4824ee8abfb5fb54a82a1f5fb29881f7, type: 3}
     - target: {fileID: 1746672074085252289, guid: e587afe6ef8d2bb41bb43ffe8eca6240, type: 3}
       propertyPath: m_Name
       value: ObjectPool
@@ -941,9 +977,7 @@ SceneRoots:
   - {fileID: 330585546}
   - {fileID: 761686787}
   - {fileID: 410087041}
-  - {fileID: 832575519}
   - {fileID: 5041492835363382923}
-  - {fileID: 1501879158}
   - {fileID: 1069285700787182761}
   - {fileID: 142097691}
   - {fileID: 2130906178}
