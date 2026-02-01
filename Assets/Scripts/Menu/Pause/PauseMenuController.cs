@@ -61,20 +61,40 @@ public class PauseMenuController : MonoBehaviour
         inputActions = PlayerLaneMovement.Instance.inputActions;
     }
 
+    private bool subscribed;
+    private Coroutine bindRoutine;
+
     void OnEnable()
     {
-        if (inputActions == null) return;
-
-        inputActions.Enable();
-        inputActions.Player.Pause.performed += OnPause;
+        bindRoutine = StartCoroutine(BindInputsWhenReady());
     }
 
     void OnDisable()
     {
-        if (inputActions == null) return;
+        if (bindRoutine != null) StopCoroutine(bindRoutine);
+        UnbindInputs();
+    }
 
-        inputActions.Player.Pause.performed -= OnPause;
-        inputActions.Disable();
+    private IEnumerator BindInputsWhenReady()
+    {
+        // Esperar hasta que el Player exista y tenga inputActions
+        while (PlayerLaneMovement.Instance == null || PlayerLaneMovement.Instance.inputActions == null)
+            yield return null;
+
+        inputActions = PlayerLaneMovement.Instance.inputActions;
+
+        // Importante: NO llames Enable/Disable acá si el Player ya lo hace.
+        inputActions.Player.Pause.performed += OnPause;
+        subscribed = true;
+    }
+
+    private void UnbindInputs()
+    {
+        if (!subscribed) return;
+        if (inputActions != null)
+            inputActions.Player.Pause.performed -= OnPause;
+
+        subscribed = false;
     }
 
     public void OnPause(InputAction.CallbackContext context) => SetPaused(!IsPaused);
