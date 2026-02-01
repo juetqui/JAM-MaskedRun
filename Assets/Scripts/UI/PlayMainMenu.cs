@@ -5,7 +5,7 @@ public class PlayMainMenu : MonoBehaviour
 {
     public void Play()
     {
-        Time.timeScale = 1f;
+        GameTimeManager.Instance.ResetTime();
 
         SceneManager.LoadScene("julian");
     }
